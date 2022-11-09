@@ -2,15 +2,77 @@
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.Nav-Container {
+  display: flex;
+  height: 8vh;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #2A5C21;
+  color:white;
+  font-size: 3vmin;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+#Nav1 {
+  flex: 0 0 5vw;
+  overflow: hidden;
+  margin-left: 0.5em;
+}
+
+#Nav1:hover{
+  color:#9E724D;
+}
+
+#Nav3 {
+  flex: 0 1 15vw;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#Nav3 * {
+  height: 3vh;
+  overflow: hidden;
+  margin: 0;
+}
+
+#Nav3 button{
+  background-color: #DEE1B7;
+}
+
+#Nav3 button:hover {
+  background-color: #B1CA94;
+}
+
+#Nav4 {
+  flex: 0 0 5vw;
+  overflow: hidden;
+  margin-right: 0.5em;
+}
+
+#Nav4:hover {
+  color: #9E724D;
+}
+
+.Page-Container {
+  display: flex;
+  list-style: none;
+  justify-content: space-around;
+  flex: 0 0 70vw;
+}
+
+.Nav-Page {
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+}
+
+.Nav-Page:hover{
+  color: #9E724D;
+}
+
+.Nav-Page * {
+  margin: 0px 0.5em;
 }
 
 .App-header {
