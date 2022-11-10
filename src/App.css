@@ -64,7 +64,7 @@
 .Nav-Page {
   display: flex;
   align-items: center;
-  overflow: hidden;
+  
 }
 
 .Nav-Page:hover{
@@ -88,6 +88,42 @@
 
 .App-link {
   color: #61dafb;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.Nav-Page a {
+  color: inherit;
+  text-decoration: inherit;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #DEE1B7;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.685);
+  z-index: auto 1;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown-content div {
+  border-top: 3px solid #9E724D;
+  overflow: hidden;
+  width: 10vw;
+}
+
+.dropdown-content .first-dropdown {
+  border-top: 0;
+}
+
+.dropdown-content div:hover {
+  background-color: #B1CA94;
 }
 
 @keyframes App-logo-spin {
