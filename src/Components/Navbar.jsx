@@ -20,19 +20,19 @@ const NavBar = () => {
         <li className="Nav-Page">
           <div className="dropdown">
             <FontAwesomeIcon icon={faHome} />
-            <a href="http://localhost:3000">Home</a>
+            <a href="/">Home</a>
           </div>
         </li>
         <li className="Nav-Page">
           <div className="dropdown">
             <FontAwesomeIcon icon={faLocationPin} />
-            <a href="http://localhost:3000">Parks</a>
+            <a href="/">Parks</a>
             <div className="dropdown-content">
               <div className="first-dropdown">
-                <a href="http://localhost:3000">Favorites</a>
+                <a href="/">Favorites</a>
               </div>
               <div>
-                <a href="http://localhost:3000">Saved</a>
+                <a href="/">Saved</a>
               </div>
             </div>
           </div>
@@ -40,13 +40,13 @@ const NavBar = () => {
         <li className="Nav-Page">
           <div className="dropdown">
             <FontAwesomeIcon icon={faDog} />
-            <a href="http://localhost:3000">Pet Pals</a>
+            <a href="/">Pet Pals</a>
             <div className="dropdown-content">
               <div className="first-dropdown">
-                <a href="http://localhost:3000">Friends</a>
+                <a href="/">Friends</a>
               </div>
               <div>
-                <a href="http://localhost:3000">Feed</a>
+                <a href="/">Feed</a>
               </div>
             </div>
           </div>
@@ -54,10 +54,10 @@ const NavBar = () => {
         <li className="Nav-Page">
           <div className="dropdown">
             <FontAwesomeIcon icon={faCalendar} />
-            <a href="http://localhost:3000">Events</a>
+            <a href="/">Events</a>
             <div className="dropdown-content">
               <div className="first-dropdown">
-                <a href="http://localhost:3000">Upcoming Events</a>
+                <a href="/">Upcoming Events</a>
               </div>
             </div>
           </div>
