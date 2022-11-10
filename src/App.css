@@ -50,8 +50,14 @@
   margin-right: 0.5em;
 }
 
+#Nav4 a {
+  color: inherit;
+  text-decoration: inherit;
+}
+
 #Nav4:hover {
   color: #9E724D;
+  
 }
 
 .Page-Container {

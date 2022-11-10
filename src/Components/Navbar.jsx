@@ -1,4 +1,3 @@
-import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faBars,
@@ -9,6 +8,7 @@ import {
   faCalendar,
   faSearch,
 } from "@fortawesome/free-solid-svg-icons";
+import { NavLink } from "react-router-dom";
 
 const NavBar = () => {
   return (
@@ -19,45 +19,49 @@ const NavBar = () => {
       <ul className="Page-Container">
         <li className="Nav-Page">
           <div className="dropdown">
+          <NavLink to="/">
             <FontAwesomeIcon icon={faHome} />
-            <a href="/">Home</a>
+            Home</NavLink>
           </div>
         </li>
         <li className="Nav-Page">
           <div className="dropdown">
+          <NavLink to="/parks">
             <FontAwesomeIcon icon={faLocationPin} />
-            <a href="/">Parks</a>
-            <div className="dropdown-content">
+            Parks</NavLink>
+         <div className="dropdown-content">
               <div className="first-dropdown">
-                <a href="/">Favorites</a>
+                <NavLink to="/favorites">Favorites</NavLink>
               </div>
               <div>
-                <a href="/">Saved</a>
+                <NavLink to="/saved">Saved</NavLink>
               </div>
             </div>
           </div>
         </li>
         <li className="Nav-Page">
           <div className="dropdown">
+          <NavLink to="/pet-pals">
             <FontAwesomeIcon icon={faDog} />
-            <a href="/">Pet Pals</a>
+            Pet Pals</NavLink>
             <div className="dropdown-content">
               <div className="first-dropdown">
-                <a href="/">Friends</a>
+                <NavLink to="/friends">Friends</NavLink>
               </div>
               <div>
-                <a href="/">Feed</a>
+                <NavLink to="/feed">Feed</NavLink>
               </div>
             </div>
           </div>
         </li>
         <li className="Nav-Page">
           <div className="dropdown">
+          <NavLink to="/events">
             <FontAwesomeIcon icon={faCalendar} />
-            <a href="/">Events</a>
+            Events</NavLink>
             <div className="dropdown-content">
               <div className="first-dropdown">
-                <a href="/">Upcoming Events</a>
+                <NavLink to="/upcoming-events">Upcoming Events</NavLink>
               </div>
             </div>
           </div>
@@ -71,7 +75,9 @@ const NavBar = () => {
       </form>
 
       <div id="Nav4">
+      <NavLink to="/login">
         <FontAwesomeIcon icon={faUser} />
+        </NavLink>
       </div>
     </div>
   );
