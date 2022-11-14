@@ -1,6 +1,5 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
-  faBars,
   faUser,
   faDog,
   faLocationPin,
@@ -9,27 +8,30 @@ import {
   faSearch,
 } from "@fortawesome/free-solid-svg-icons";
 import { NavLink } from "react-router-dom";
+import logo from "../images/logo.png";
 
 const NavBar = () => {
   return (
     <div className="Nav-Container">
       <div id="Nav1">
-        <FontAwesomeIcon icon={faBars} />
+        <img src={logo} alt="logo" className="logo-image" />
       </div>
       <ul className="Page-Container">
         <li className="Nav-Page">
-          <div className="dropdown">
-          <NavLink to="/">
-            <FontAwesomeIcon icon={faHome} />
-            Home</NavLink>
+          <div className="dropdown push">
+            <NavLink to="/">
+              <FontAwesomeIcon icon={faHome} />
+              Home
+            </NavLink>
           </div>
         </li>
         <li className="Nav-Page">
           <div className="dropdown">
-          <NavLink to="/parks">
-            <FontAwesomeIcon icon={faLocationPin} />
-            Parks</NavLink>
-         <div className="dropdown-content">
+            <NavLink to="/parks">
+              <FontAwesomeIcon icon={faLocationPin} />
+              Parks
+            </NavLink>
+            <div className="dropdown-content">
               <div className="first-dropdown">
                 <NavLink to="/favorites">Favorites</NavLink>
               </div>
@@ -41,9 +43,10 @@ const NavBar = () => {
         </li>
         <li className="Nav-Page">
           <div className="dropdown">
-          <NavLink to="/pet-pals">
-            <FontAwesomeIcon icon={faDog} />
-            Pet Pals</NavLink>
+            <NavLink to="/pet-pals">
+              <FontAwesomeIcon icon={faDog} />
+              Pet Pals
+            </NavLink>
             <div className="dropdown-content">
               <div className="first-dropdown">
                 <NavLink to="/friends">Friends</NavLink>
@@ -56,9 +59,10 @@ const NavBar = () => {
         </li>
         <li className="Nav-Page">
           <div className="dropdown">
-          <NavLink to="/events">
-            <FontAwesomeIcon icon={faCalendar} />
-            Events</NavLink>
+            <NavLink to="/events">
+              <FontAwesomeIcon icon={faCalendar} />
+              Events
+            </NavLink>
             <div className="dropdown-content">
               <div className="first-dropdown">
                 <NavLink to="/upcoming-events">Upcoming Events</NavLink>
@@ -75,8 +79,8 @@ const NavBar = () => {
       </form>
 
       <div id="Nav4">
-      <NavLink to="/login">
-        <FontAwesomeIcon icon={faUser} />
+        <NavLink to="/login">
+          <FontAwesomeIcon icon={faUser} />
         </NavLink>
       </div>
     </div>

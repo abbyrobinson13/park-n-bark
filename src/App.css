@@ -20,15 +20,27 @@ nav {
   padding-bottom: 15px;
 }
 
+
+
 .active {
   background-color: #4f2f1540;
   box-shadow: 5px 5px 5px 5px #4f2f155b;
 }
 
 #Nav1 {
-  flex: 0 1 5vw;
+  flex: 1 1 10vw;
   overflow: hidden;
-  margin-left: 0.5em;
+  padding-right: 10rem;
+  width: 100px !important;
+
+  /* margin-left: 0.5em; */
+}
+
+.logo-image{
+  width: 180px !important;
+  height: 100px !important;
+  overflow: hidden;
+  margin-top: -6px;
 }
 
 #Nav1:hover{
@@ -89,7 +101,7 @@ nav {
   display: flex;
   list-style: none;
   justify-content: space-around;
-  flex: 0 0 70vw;
+  flex: 0 0 45vw;
 }
 
 .Nav-Page {
