@@ -1,4 +1,3 @@
-/* CSS for the Nav BAr */
 .App {
   text-align: center;
 }
@@ -16,8 +15,6 @@ nav {
   background-color: #2A5C21;
   color:white;
   font-size: 3vmin;
-  padding-top: 15px;
-  padding-bottom: 15px;
 }
 
 .active {
@@ -37,6 +34,7 @@ nav {
 
 #Nav3 {
   flex: 0 1 15vw;
+  overflow: hidden;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -55,6 +53,7 @@ nav {
 
 #Nav3 * {
   height: 3vh;
+  overflow: hidden;
   margin: 0;
   flex: auto;
   border: none;
@@ -70,6 +69,7 @@ nav {
 
 #Nav4 {
   flex: 0 0 5vw;
+  overflow: hidden;
   margin-right: 0.5em;
 }
 
@@ -103,6 +103,16 @@ nav {
   margin: 0px 0.5em;
 }
 
+.App-header {
+  background-color: #282c34;
+  min-height: 150vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
 
 .App-link {
   color: #61dafb;
@@ -147,16 +157,4 @@ nav {
 
 .dropdown-content div:hover {
   background-color: #B1CA94;
-}
-
-/* CSS for default current body  */
-.App-header {
-  background-color: #282c34;
-  min-height: 150vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
