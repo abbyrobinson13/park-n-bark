@@ -2,6 +2,11 @@
   text-align: center;
 }
 
+nav {
+  position: fixed;
+  width: 100vw;
+}
+
 .Nav-Container {
   display: flex;
   height: 8vh;
@@ -18,7 +23,7 @@
 }
 
 #Nav1 {
-  flex: 0 0 5vw;
+  flex: 0 1 5vw;
   overflow: hidden;
   margin-left: 0.5em;
 }
@@ -33,12 +38,25 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  border:1px solid grey;
+  padding:2px;
+}
+
+#Nav3 input {
+  flex-grow: 1;
+  background-color: #DEE1B7;
+}
+
+#Nav3 input:focus {
+  outline-style: none;
 }
 
 #Nav3 * {
   height: 3vh;
   overflow: hidden;
   margin: 0;
+  flex: auto;
+  border: none;
 }
 
 #Nav3 button{
@@ -87,7 +105,7 @@
 
 .App-header {
   background-color: #282c34;
-  min-height: 100vh;
+  min-height: 150vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -139,13 +157,4 @@
 
 .dropdown-content div:hover {
   background-color: #B1CA94;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
 }
