@@ -15,6 +15,7 @@ const NavBar = () => {
     <div className="Nav-Container">
       <div id="Nav1">
         <img src={logo} alt="logo" className="logo-image" />
+        <span className="nav-title">Park n' Bark</span>
       </div>
       <ul className="Page-Container">
         <li className="Nav-Page">

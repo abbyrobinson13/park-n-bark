@@ -17,10 +17,15 @@ nav {
   background-color: #2A5C21;
   color:white;
   font-size: 3vmin;
-  padding-top: 15px;
-  padding-bottom: 15px;
+  padding-top: 40px;
+  padding-bottom: 30px;
 }
 
+.nav-title {
+  padding: 0 20px;
+  font-size: 25px;
+  font-weight: bold;
+}
 
 
 .active {
@@ -31,7 +36,7 @@ nav {
 #Nav1 {
   flex: 1 1 10vw;
   overflow: hidden;
-  padding-right: 10rem;
+  padding-right: 7rem;
   width: 100px !important;
 
   /* margin-left: 0.5em; */
@@ -50,6 +55,8 @@ nav {
 }
 
 #Nav3 {
+  position: relative;
+  bottom: 10px;
   flex: 0 1 15vw;
   overflow: hidden;
   display: flex;
@@ -57,6 +64,10 @@ nav {
   justify-content: center;
   border:1px solid grey;
   padding:2px;
+}
+
+#Nav3 form{
+  height: 20px;
 }
 
 #Nav3 input {
@@ -69,7 +80,7 @@ nav {
 }
 
 #Nav3 * {
-  height: 3vh;
+  height: 4vh;
   overflow: hidden;
   margin: 0;
   flex: auto;
@@ -101,9 +112,10 @@ nav {
 
 .Page-Container {
   display: flex;
+  font-size: 15px;
   list-style: none;
   justify-content: space-around;
-  flex: 0 0 45vw;
+  flex: 0 0 50vw;
 }
 
 .Nav-Page {
@@ -182,7 +194,6 @@ nav {
 
 .slider {
   position: relative;
-  bottom:75px;
   height: 100vh;
   display: flex;
   justify-content: center;
@@ -227,12 +238,28 @@ nav {
   transition-duration: 1s;
   transform: scale(1.08);
   position: relative;
-  bottom:75px;
+  top: 30px;
 }
 
-/* Stars section */
+/* Dog Fact CSS */
+
+.dog-fact{
+  height: 300px;
+  width: 100%;
+  text-align: center;
+  background-color: #4F2F15;
+}
+
+.dog-fact > h2 {
+  position: relative;
+  top: 125px;
+}
+
+/* Stars section - 3 Cards */
 
 .stars-section {
+  position:relative;
+
   width: auto;
   height: 1000px;
   background-color: #2a5c21;

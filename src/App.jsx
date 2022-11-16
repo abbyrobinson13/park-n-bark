@@ -1,6 +1,5 @@
 import Main from "./components/Main";
 import NavBar from "./components/Navbar";
-import Cards from "./components/Cards/CardUI.jsx";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./App.css";
 
@@ -11,7 +10,6 @@ function App() {
         <NavBar />
       </nav>
       <Main />
-      <Cards />
     </div>
   );
 }
