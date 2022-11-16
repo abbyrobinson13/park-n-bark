@@ -38,8 +38,9 @@ nav {
 }
 
 .logo-image{
-  width: 180px !important;
-  height: 100px !important;
+  width: 105px !important;
+  height: 105px !important;
+  border-radius: 50%;
   overflow: hidden;
   margin-top: -6px;
 }
