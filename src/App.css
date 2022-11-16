@@ -6,6 +6,7 @@
 nav {
   position: fixed;
   width: 100vw;
+  z-index:1;
 }
 
 .Nav-Container {
@@ -180,6 +181,7 @@ nav {
 
 .slider {
   position: relative;
+  bottom:75px;
   height: 100vh;
   display: flex;
   justify-content: center;
@@ -223,4 +225,6 @@ nav {
   opacity: 1; 
   transition-duration: 1s;
   transform: scale(1.08);
+  position: relative;
+  bottom:75px;
 }
