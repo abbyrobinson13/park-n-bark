@@ -8,7 +8,7 @@ import {
   faSearch,
 } from "@fortawesome/free-solid-svg-icons";
 import { NavLink } from "react-router-dom";
-import logo from "../images/logo.png";
+import logo from "./images/logo.png";
 
 const NavBar = () => {
   return (
