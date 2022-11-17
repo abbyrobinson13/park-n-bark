@@ -21,38 +21,27 @@ nav * {
   background-color: #2A5C21;
   color:white;
   font-size: 3vmin;
-  padding-top: 40px;
-  padding-bottom: 30px;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 
-<<<<<<< HEAD
-=======
 .nav-title {
-  padding: 0 20px;
-  font-size: 25px;
+  position: relative;
+  left: 12vw;
   font-weight: bold;
 }
 
-
->>>>>>> 86058d6d87e14979a55c931d110dbf531667400c
 .active {
   background-color: #4f2f1540;
   box-shadow: 5px 5px 5px 5px #4f2f155b;
 }
 
 #Nav1 {
-<<<<<<< HEAD
   flex: 0 1 25vw;
   display: flex;
   align-items: center;
   text-decoration: none;
 }
-=======
-  flex: 1 1 10vw;
-  overflow: hidden;
-  padding-right: 7rem;
-  width: 100px !important;
->>>>>>> 86058d6d87e14979a55c931d110dbf531667400c
 
 #Nav1 a {
   text-decoration: inherit;
@@ -73,23 +62,12 @@ nav * {
   margin-top: -0.7vh;
 }
 
-#Nav1 span {
-  position: relative;
-  left: 12vw;
-}
-
 #Nav1:hover{
   color:#9E724D;
 }
 
 #Nav3 {
-<<<<<<< HEAD
   flex: 0 0 15vw;
-=======
-  position: relative;
-  bottom: 10px;
-  flex: 0 1 15vw;
->>>>>>> 86058d6d87e14979a55c931d110dbf531667400c
   overflow: hidden;
   display: flex;
   align-items: center;
@@ -111,15 +89,10 @@ nav * {
 }
 
 #Nav3 * {
-<<<<<<< HEAD
-=======
-  height: 4vh;
->>>>>>> 86058d6d87e14979a55c931d110dbf531667400c
   overflow: hidden;
   margin: 0;
   flex: auto;
   border: none;
-  font-size: 3vmin;
 }
 
 #Nav3 button{
@@ -148,15 +121,10 @@ nav * {
 
 .Page-Container {
   display: flex;
-  font-size: 15px;
   list-style: none;
   justify-content: space-around;
-<<<<<<< HEAD
   margin-bottom: 0;
   flex: 0 1 55vw;
-=======
-  flex: 0 0 50vw;
->>>>>>> 86058d6d87e14979a55c931d110dbf531667400c
 }
 
 .Nav-Page {
@@ -235,10 +203,7 @@ nav * {
 
 .slider {
   position: relative;
-<<<<<<< HEAD
-  bottom:10vh;
-=======
->>>>>>> 86058d6d87e14979a55c931d110dbf531667400c
+  bottom:-10vh;
   height: 100vh;
   display: flex;
   justify-content: center;
@@ -285,11 +250,7 @@ nav * {
   transition-duration: 1s;
   transform: scale(1.11);
   position: relative;
-<<<<<<< HEAD
   bottom:7vh;
-=======
-  top: 30px;
->>>>>>> 86058d6d87e14979a55c931d110dbf531667400c
 }
 
 /* Dog Fact CSS */
@@ -310,7 +271,6 @@ nav * {
 
 .stars-section {
   position:relative;
-
   width: auto;
   height: 1000px;
   background-color: #2a5c21;
