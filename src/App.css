@@ -203,7 +203,7 @@ nav * {
 
 .slider {
   position: relative;
-  bottom:-10vh;
+  bottom:-14vh;
   height: 100vh;
   display: flex;
   justify-content: center;
