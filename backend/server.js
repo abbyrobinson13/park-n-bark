@@ -31,8 +31,7 @@ app.get("/facts", async (req, res) => {
   res.send(fact.facts);
 });
 
-const weatherUrl =
-  "https://api.openweathermap.org/data/2.5/weather?lat=51.0447&lon=114.0719&appid=69672dd3b892629e9b388e8d49be50e0&units=metric";
+const weatherUrl = process.env.WEATHER_API_KEY;
 
 const getWeather = async () => {
   const response = await fetch(weatherUrl);
@@ -40,6 +39,7 @@ const getWeather = async () => {
   return {
     conditions: data.weather[0].description,
     temperature: data.main.temp,
+    feelslike: data.main.feels_like,
   };
 };
 app.get("/weather", async (req, res) => {
