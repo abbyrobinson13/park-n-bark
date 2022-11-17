@@ -5,7 +5,6 @@ import CurrentWeather from "./CurrentWeather";
 function Weather() {
   const [currentWeather, setCurrentWeather] = useState();
   const getCurrentWeather = async () => {
-    console.log("hello from getCurrentTime");
     try {
       let response = await fetch("/weather");
       let values = await response.json();
@@ -17,9 +16,7 @@ function Weather() {
   };
 
   useMyEffect(() => {
-    console.log("hello from useEffect");
     const id = setInterval(() => {
-      console.log("hello from interval");
       getCurrentWeather();
     }, 3000);
 

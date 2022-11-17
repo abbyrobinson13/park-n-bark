@@ -18,11 +18,6 @@ async function main() {
   // console.log(`Connected to MongoDB database '${process.env.MONGODB_DBNAME}'`);
 
   app.use(express.json());
-  app.use(
-    cors({
-      origin: "http://localhost:3000",
-    })
-  );
 
   app.listen(port, () => {
     console.log(`Web server running on port ${port}`);
