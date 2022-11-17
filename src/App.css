@@ -156,6 +156,10 @@ nav * {
   text-decoration: inherit;
 }
 
+.Nav-Page a:hover {
+  color: inherit;
+}
+
 .dropdown-content {
   display: none;
   position: absolute;
