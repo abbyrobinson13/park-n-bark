@@ -1,0 +1,169 @@
+[
+  {
+    "type": "Feature",
+    "properties": {
+      "title": "Thorncliffe & North Haven (Egert's Park)",
+      "quadrant":"NE",
+      "address": "151 THAMES CL NW",
+      "description": "Off leash dog park in NE Calagry, Community Cluster",
+      "fenced":"partially",
+      "riverAccess":"false",
+      "agilityEquiptment":"false"
+    },
+    "geometry": {
+      "coordinates": [-114.07977271327672, 51.105361446945594],
+      "type": "Point"
+    }, 
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "title": "Thorncliffe & North Haven (Egert's Park)",
+      "quadrant":"NE",
+      "address": "980 48 AV NW",
+      "description": "Off leash dog park in NE Calagry, Community Cluster",
+      "fenced":"partially",
+      "riverAccess":"false",
+      "agilityEquiptment":"false"
+    },
+    "geometry": {
+      "coordinates": [-114.0835841709488, 51.098289632937075],
+      "type": "Point"
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "title": "Thorncliffe & skyline west & greenview (Layrock park)",
+      "quadrant":"NE",
+      "address": "448 BEAVER DAM RD NE",
+      "description": "Off leash dog park in NE Calagry,Community Cluster",
+      "fenced":"None",
+      "riverAccess":"false",
+      "agilityEquiptment":"false"
+    },
+    "geometry": {
+      "coordinates": [-114.05397489973983, 51.103178611737206],
+      "type": "Point"
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "title": "Tuscany Buffer & TucArea 2",
+      "quadrant":"NW",
+      "address": "4Q88+PG, Calgary",
+      "description": "Off leash dog park in NW Calagry, neighborhood park",
+      "fenced":"none",
+      "riverAccess":"false",
+      "agilityEquiptment":"false"
+    },
+    "geometry": {
+      "coordinates": [-114.23361239827972, 51.11692699251573],
+      "type": "Point"
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "title": "12 Mile Coulee(Tuscany Area 1)",
+      "quadrant":"NW",
+      "address": "137 Tuscarora Pl NW",
+      "description": "Off leash dog park in NW Calagry, neighborhood park",
+      "fenced":"partially",
+      "riverAccess":"false",
+      "agilityEquiptment":"false"
+    },
+    "geometry": {
+      "coordinates": [-114.23245000297115, 51.128514626488005],
+      "type": "Point"
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "title": "VARSITY",
+      "quadrant":"NW",
+      "address": "216R VALENCIA RD NW",
+      "description": "Off leash dog park in NW Calagry, very open neighborhood park",
+      "fenced":"partially",
+      "riverAccess":"false",
+      "agilityEquiptment":"false"
+    },
+    "geometry": {
+      "coordinates": [ -114.1612163337573, 51.09721656128158],
+      "type": "Point"
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "title": "West Hillhrust",
+      "quadrant":"NW",
+      "address": "1025 19 ST NW",
+      "description": "Off leash dog park in NW Calagry, neighborhood park",
+      "fenced":"partially",
+      "riverAccess":"false",
+      "agilityEquiptment":"false"
+    },
+    "geometry": {
+      "coordinates": [-114.10640479815197, 51.06090160340049],
+      "type": "Point"
+    }
+  },
+    {
+        "type": "Feature",
+        "properties": {
+          "title": "Wildwood (Edworthy Park) Area 2",
+          "quadrant":"SW",
+          "address": "5050 SPRUCE DR SW; EDWORTHY PARK @ Angles Cafe",
+          "description": "Off leash dog park in SW Calagry, great scenic walks and river access",
+          "fenced":"None",
+          "riverAccess":"true",
+          "agilityEquiptment":"false"
+        },
+        "geometry": {
+          "coordinates": [-114.149357, 51.059798],
+          "type": "Point"
+        }
+      },
+       
+
+
+    {
+        "type": "Feature",
+        "properties": {
+          "title": "Willow Park",
+          "quadrant":"SE",
+          "address": "607 WILLACY DR SE",
+          "description": " Off leash area in SE of Calgary, a small     neighborhood park next to a highway.",
+          "fenced":"partially",
+          "riverAccess":"false",
+          "agilityEquiptment":" "
+        },
+        "geometry": {
+          "coordinates": [-114.05175844392174, 50.94875095257066],
+          "type": "Point"
+        }
+      },
+    {
+    "type": "Feature",
+    "properties": {
+      "title": "Winston Heights Mountview (Elks Park)",
+      "quadrant":"NE",
+      "address": "36 MONCTON RD NE",
+      "description": "Off leash dog park in NE Calagry, for nice walks with tall grass and nice trails.",
+      "fenced":"None",
+      "riverAccess":"false",
+      "agilityEquiptment":"false"
+    },
+    "geometry": {
+      "coordinates": [-114.04531369134986, 51.07385729518579],
+      "type": "Point"
+    }
+    
+}
+
+]
+  
+
