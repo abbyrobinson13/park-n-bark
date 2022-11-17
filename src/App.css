@@ -6,12 +6,16 @@
 nav {
   position: fixed;
   width: 100vw;
-  z-index:1;
+  z-index:10;
+}
+
+nav * {
+  box-sizing: content-box;
 }
 
 .Nav-Container {
   display: flex;
-  height: 8vh;
+  height: 6vh;
   align-items: center;
   justify-content: space-between;
   background-color: #2A5C21;
@@ -21,28 +25,40 @@ nav {
   padding-bottom: 15px;
 }
 
-
-
 .active {
   background-color: #4f2f1540;
   box-shadow: 5px 5px 5px 5px #4f2f155b;
 }
 
 #Nav1 {
-  flex: 1 1 10vw;
-  overflow: hidden;
-  padding-right: 10rem;
-  width: 100px !important;
+  flex: 0 1 25vw;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+}
 
-  /* margin-left: 0.5em; */
+#Nav1 a {
+  text-decoration: inherit;
+  color: inherit;
+  
+}
+
+#Nav1 .active {
+  box-shadow: none;
+  background-color: rgba(0, 0, 0, 0);
 }
 
 .logo-image{
-  width: 105px !important;
-  height: 105px !important;
-  border-radius: 50%;
-  overflow: hidden;
-  margin-top: -6px;
+  position: absolute;
+  top: 0px;
+  height: 15vh;
+  width: 12vw;
+  margin-top: -0.7vh;
+}
+
+#Nav1 span {
+  position: relative;
+  left: 12vw;
 }
 
 #Nav1:hover{
@@ -50,7 +66,7 @@ nav {
 }
 
 #Nav3 {
-  flex: 0 1 15vw;
+  flex: 0 0 15vw;
   overflow: hidden;
   display: flex;
   align-items: center;
@@ -60,7 +76,6 @@ nav {
 }
 
 #Nav3 input {
-  flex-grow: 1;
   background-color: #DEE1B7;
 }
 
@@ -69,15 +84,16 @@ nav {
 }
 
 #Nav3 * {
-  height: 3vh;
   overflow: hidden;
   margin: 0;
   flex: auto;
   border: none;
+  font-size: 3vmin;
 }
 
 #Nav3 button{
   background-color: #DEE1B7;
+  flex: 0 1 5vw;
 }
 
 #Nav3 button:hover {
@@ -103,7 +119,8 @@ nav {
   display: flex;
   list-style: none;
   justify-content: space-around;
-  flex: 0 0 45vw;
+  margin-bottom: 0;
+  flex: 0 1 55vw;
 }
 
 .Nav-Page {
@@ -182,17 +199,17 @@ nav {
 
 .slider {
   position: relative;
-  bottom:75px;
+  bottom:10vh;
   height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
  
 }
+
 .image {
-  
   padding:0;
-  width: 100vw;
+  width: 90vw;
   height: 85vh; 
   border-radius: 10px;
   
@@ -200,23 +217,25 @@ nav {
 .leftArrow {
   position: absolute;
   top: 50%;
-  left: 32px;
+  left: 0vw;
   font-size: 3rem;
   color: #DEE1B7;
-  z-index: 10;
+  z-index: 2;
   cursor: pointer;
   user-select: none;
 }
+
 .rightArrow {
   position: absolute;
   top: 50%;
-  right: 32px;
+  right: 0vw;
   font-size: 3rem;
   color: #DEE1B7;
-  z-index: 10;
+  z-index: 2;
   cursor: pointer;
   user-select: none;
 }
+
 .slide{
   opacity: 0;
   transition-duration: 1s ease;
@@ -225,9 +244,9 @@ nav {
 .slide.active {
   opacity: 1; 
   transition-duration: 1s;
-  transform: scale(1.08);
+  transform: scale(1.11);
   position: relative;
-  bottom:75px;
+  bottom:7vh;
 }
 
 /* Stars section */

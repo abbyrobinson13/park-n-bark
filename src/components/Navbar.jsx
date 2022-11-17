@@ -14,7 +14,10 @@ const NavBar = () => {
   return (
     <div className="Nav-Container">
       <div id="Nav1">
+        <NavLink to="/">
         <img src={logo} alt="logo" className="logo-image" />
+        <span>Park n' Bark</span>
+        </NavLink>
       </div>
       <ul className="Page-Container">
         <li className="Nav-Page">
@@ -72,7 +75,7 @@ const NavBar = () => {
         </li>
       </ul>
       <form id="Nav3" action="">
-        <input type="search" placeholder="search" />
+        <input type="search" placeholder="Search" />
         <button type="submit">
           <FontAwesomeIcon icon={faSearch} />
         </button>
