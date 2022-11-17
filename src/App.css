@@ -194,7 +194,7 @@ nav * {
 /* CSS for default current body  */
 .App-header {
   background-color: #282c34;
-  min-height: 150vh;
+  min-height: 130vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -339,5 +339,33 @@ footer {
 .card-img-top:hover{
   transform: scale(1.3);
 }
- /* Weather api  */
 
+ /* Parks Page */
+
+#parks-container {
+  position: relative;
+  top: 4.5vh;
+  display: grid;
+  grid-template-columns: 60vw 40vw;
+  grid-template-rows: 10vh 70vh 35vh;
+  gap: 1vmin;
+  overflow: hidden;
+}
+
+#park-display {
+  background-color: green;
+  grid-row-start: span 3 ;
+}
+
+#search-box {
+  background-color: grey;
+}
+
+#map-display {
+  background-color: #4F2F15;
+}
+
+#weather-display {
+  background-color: #61dafb;
+  place-self: center stretch;
+}
