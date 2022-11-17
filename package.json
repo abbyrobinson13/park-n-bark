@@ -1,6 +1,8 @@
 {
   "name": "park-n-bark",
-  "proxy": "http://localhost:4000",
+  "options": {
+    "allowedHosts": ["localhost", ".localhost"],
+    "proxy": "http://localhost:4000"},
   "version": "0.1.0",
   "private": true,
   "type": "module",
@@ -14,7 +16,6 @@
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
     "bootstrap": "^5.2.2",
-    "cors": "^2.8.5",
     "dotenv": "^16.0.3",
     "font-awesome": "^4.7.0",
     "node-fetch": "^3.3.0",

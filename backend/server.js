@@ -24,7 +24,7 @@ async function main() {
   });
 }
 
-app.get("/facts", cors(), async (req, res) => {
+app.get("/facts", async (req, res) => {
   let serverReq = await fetch(`http://dog-api.kinduff.com/api/facts`);
   let fact = await serverReq.json();
   console.log("fact sent");
