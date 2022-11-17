@@ -1,9 +1,10 @@
 import React from 'react'
+import Weather from '../components/WeatherAPI/Weather'
 
 const Parks = () => {
   return (
     <header className="App-header">
-        Parks
+      < Weather />
       </header>
   )
 }
