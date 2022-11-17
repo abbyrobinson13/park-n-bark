@@ -14,11 +14,18 @@ function Weather() {
       console.log(ex);
     }
   };
+  
+  useMyEffect(() => {
+    console.log("first render");
+    getCurrentWeather()
+    return () => console.log("unmounted");
+  }, []);
 
   useMyEffect(() => {
     const id = setInterval(() => {
+      
       getCurrentWeather();
-    }, 3000);
+    }, 900000);
 
     return () => clearInterval(id);
   }, []);
