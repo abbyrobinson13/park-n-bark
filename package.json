@@ -1,6 +1,8 @@
 {
   "name": "park-n-bark",
-  "proxy": "http://localhost:4000",
+  "options": {
+    "allowedHosts": ["localhost", ".localhost"],
+    "proxy": "http://localhost:4000"},
   "version": "0.1.0",
   "private": true,
   "type": "module",
