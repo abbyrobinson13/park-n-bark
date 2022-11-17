@@ -21,21 +21,38 @@ nav * {
   background-color: #2A5C21;
   color:white;
   font-size: 3vmin;
-  padding-top: 15px;
-  padding-bottom: 15px;
+  padding-top: 40px;
+  padding-bottom: 30px;
 }
 
+<<<<<<< HEAD
+=======
+.nav-title {
+  padding: 0 20px;
+  font-size: 25px;
+  font-weight: bold;
+}
+
+
+>>>>>>> 86058d6d87e14979a55c931d110dbf531667400c
 .active {
   background-color: #4f2f1540;
   box-shadow: 5px 5px 5px 5px #4f2f155b;
 }
 
 #Nav1 {
+<<<<<<< HEAD
   flex: 0 1 25vw;
   display: flex;
   align-items: center;
   text-decoration: none;
 }
+=======
+  flex: 1 1 10vw;
+  overflow: hidden;
+  padding-right: 7rem;
+  width: 100px !important;
+>>>>>>> 86058d6d87e14979a55c931d110dbf531667400c
 
 #Nav1 a {
   text-decoration: inherit;
@@ -66,13 +83,23 @@ nav * {
 }
 
 #Nav3 {
+<<<<<<< HEAD
   flex: 0 0 15vw;
+=======
+  position: relative;
+  bottom: 10px;
+  flex: 0 1 15vw;
+>>>>>>> 86058d6d87e14979a55c931d110dbf531667400c
   overflow: hidden;
   display: flex;
   align-items: center;
   justify-content: center;
   border:1px solid grey;
   padding:2px;
+}
+
+#Nav3 form{
+  height: 20px;
 }
 
 #Nav3 input {
@@ -84,6 +111,10 @@ nav * {
 }
 
 #Nav3 * {
+<<<<<<< HEAD
+=======
+  height: 4vh;
+>>>>>>> 86058d6d87e14979a55c931d110dbf531667400c
   overflow: hidden;
   margin: 0;
   flex: auto;
@@ -117,10 +148,15 @@ nav * {
 
 .Page-Container {
   display: flex;
+  font-size: 15px;
   list-style: none;
   justify-content: space-around;
+<<<<<<< HEAD
   margin-bottom: 0;
   flex: 0 1 55vw;
+=======
+  flex: 0 0 50vw;
+>>>>>>> 86058d6d87e14979a55c931d110dbf531667400c
 }
 
 .Nav-Page {
@@ -199,7 +235,10 @@ nav * {
 
 .slider {
   position: relative;
+<<<<<<< HEAD
   bottom:10vh;
+=======
+>>>>>>> 86058d6d87e14979a55c931d110dbf531667400c
   height: 100vh;
   display: flex;
   justify-content: center;
@@ -246,12 +285,32 @@ nav * {
   transition-duration: 1s;
   transform: scale(1.11);
   position: relative;
+<<<<<<< HEAD
   bottom:7vh;
+=======
+  top: 30px;
+>>>>>>> 86058d6d87e14979a55c931d110dbf531667400c
 }
 
-/* Stars section */
+/* Dog Fact CSS */
+
+.dog-fact{
+  height: 300px;
+  width: 100%;
+  text-align: center;
+  background-color: #4F2F15;
+}
+
+.dog-fact > h2 {
+  position: relative;
+  top: 125px;
+}
+
+/* Stars section - 3 Cards */
 
 .stars-section {
+  position:relative;
+
   width: auto;
   height: 1000px;
   background-color: #2a5c21;

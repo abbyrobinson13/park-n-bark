@@ -16,7 +16,7 @@ const NavBar = () => {
       <div id="Nav1">
         <NavLink to="/">
         <img src={logo} alt="logo" className="logo-image" />
-        <span>Park n' Bark</span>
+        <span className="nav-title">Park n' Bark</span>
         </NavLink>
       </div>
       <ul className="Page-Container">
