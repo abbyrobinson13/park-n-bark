@@ -3,7 +3,7 @@ import { useEffect as useMyEffect, useState } from "react";
 import CurrentWeather from "./CurrentWeather";
 
 function Weather() {
-  const [currentWeather, setCurrentWeather] = useState();
+  const [currentWeather, setCurrentWeather] = useState({conditions: "Loading...", temperature: "Loading...", feelslike: "Loading..."});
   const getCurrentWeather = async () => {
     try {
       let response = await fetch("/weather");
@@ -16,9 +16,9 @@ function Weather() {
   };
   
   useMyEffect(() => {
-    console.log("first render");
+    console.log("first weather render");
     getCurrentWeather()
-    return () => console.log("unmounted");
+    return () => console.log("weather unmounted");
   }, []);
 
   useMyEffect(() => {

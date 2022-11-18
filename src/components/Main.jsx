@@ -1,4 +1,4 @@
-import { Routes, Route } from 'react-router-dom';
+import { Routes, Route, useLocation } from 'react-router-dom';
 import Events from '../pages/events';
 import Favorites from '../pages/favorites';
 import Feed from '../pages/feed';
