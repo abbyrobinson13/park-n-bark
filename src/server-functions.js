@@ -5,4 +5,9 @@ const dogFact = async () => {
   return fact;
 };
 
-export { dogFact };
+
+
+const formSubmit = (e) => {
+  e.preventDefault()
+  console.log(e.target)}
+export { dogFact, formSubmit };

@@ -66,7 +66,7 @@ nav * {
   color:#9E724D;
 }
 
-#Nav3 {
+.Nav3 {
   flex: 0 0 15vw;
   overflow: hidden;
   display: flex;
@@ -76,31 +76,31 @@ nav * {
   padding:2px;
 }
 
-#Nav3 form{
+.Nav3 form{
   height: 20px;
 }
 
-#Nav3 input {
+.Nav3 input {
   background-color: #DEE1B7;
 }
 
-#Nav3 input:focus {
+.Nav3 input:focus {
   outline-style: none;
 }
 
-#Nav3 * {
+.Nav3 * {
   overflow: hidden;
   margin: 0;
   flex: auto;
   border: none;
 }
 
-#Nav3 button{
+.Nav3 button{
   background-color: #DEE1B7;
-  flex: 0 1 5vw;
+  flex: 0 1 5em;
 }
 
-#Nav3 button:hover {
+.Nav3 button:hover {
   background-color: #B1CA94;
 }
 
@@ -346,7 +346,7 @@ footer {
   position: relative;
   top: 4.5vh;
   display: grid;
-  grid-template-columns: 60vw 40vw;
+  grid-template-columns: 40vw 60vw;
   grid-template-rows: 10vh 70vh 35vh;
   gap: 1vmin;
   overflow: hidden;
@@ -358,7 +358,7 @@ footer {
 }
 
 #search-box {
-  background-color: grey;
+  place-self: center;
 }
 
 #map-display {
