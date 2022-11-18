@@ -6,7 +6,7 @@ function Weather() {
   const [currentWeather, setCurrentWeather] = useState({conditions: "Loading...", temperature: "Loading...", feelslike: "Loading..."});
   const getCurrentWeather = async () => {
     try {
-      let response = await fetch("/weather");
+      let response = await fetch("/api/weather");
       let values = await response.json();
       console.log(values);
       setCurrentWeather(values);
