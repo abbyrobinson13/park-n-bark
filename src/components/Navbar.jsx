@@ -9,6 +9,8 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 import { NavLink } from "react-router-dom";
 import logo from "./images/logo.png";
+import { formSubmit } from "../server-functions";
+import Searchbox from "./Searchbox";
 
 const NavBar = () => {
   return (
@@ -74,13 +76,7 @@ const NavBar = () => {
           </div>
         </li>
       </ul>
-      <form id="Nav3" action="">
-        <input type="search" placeholder="Search" />
-        <button type="submit">
-          <FontAwesomeIcon icon={faSearch} />
-        </button>
-      </form>
-
+      <Searchbox />
       <div id="Nav4">
         <NavLink to="/login">
           <FontAwesomeIcon icon={faUser} />
