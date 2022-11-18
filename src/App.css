@@ -346,7 +346,7 @@ footer {
   position: relative;
   top: 4.5vh;
   display: grid;
-  grid-template-columns: 40vw 60vw;
+  grid-template-columns: 39vw 59vw;
   grid-template-rows: 10vh 70vh 35vh;
   gap: 1vmin;
   overflow: hidden;
@@ -354,15 +354,18 @@ footer {
 
 #park-display {
   background-color: green;
-  grid-row-start: span 3 ;
+  grid-row-start: 2;
+  
 }
 
 #search-box {
   place-self: center;
+  grid-column-start: 1;
 }
 
 #map-display {
   background-color: #4F2F15;
+  grid-row-start: span 3;
 }
 
 #weather-display {
