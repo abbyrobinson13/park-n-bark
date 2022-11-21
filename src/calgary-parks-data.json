@@ -1,10 +1,170 @@
-[ {
+[  {
+  "type": "Feature",
+  "properties": {
+    "title": "",
+    "quadrant":"",
+    "address": "",
+    "description": " ",
+    "fenced":"",
+    "riverAccess":" ",
+    "agilityEquiptment":" "
+  },
+  "geometry": {
+    "coordinates": ["long, lat"],
+    "type": "Point"
+  }
+},
+   {
+  "type": "Feature",
+  "properties": {
+    "title": "Tom Campbell's Hill ",
+    "quadrant":"NE",
+    "address": "1638 CENTRE AV NE",
+    "description": "Off leash dog park in NE Calagry, great scenic walks and large open space.",
+    "fenced":"Partially",
+    "riverAccess":"false",
+    "agilityEquiptment":"false"
+  },
+  "geometry": {
+    "coordinates": [-114.02837850019208, 51.052856851088826],
+    "type": "Point"
+  }
+},
+{
+  "type": "Feature",
+  "properties": {
+    "title":  "Richmond",
+    "quadrant":"SW",
+    "address": "2001 22 ST SW",
+    "description": "Off leash dog area in SW Calagry, a neighborhood park.",
+    "fenced":"Partially",
+    "riverAccess":"false",
+    "agilityEquiptment":"false"
+  },
+  "geometry": {
+    "coordinates": [-114.11405788441903, 51.035946755992406],
+    "type": "Point"
+  }
+},
+{
+  "type": "Feature",
+  "properties": {
+    "title": "Riverdale Off Leash Dog Park ",
+    "quadrant":"SW",
+    "address": "1334 Riverdale Ave SW",
+    "description": "Off leash dog area in SW Calagry, a large open park with tall grass.",
+    "fenced":"Fully",
+    "riverAccess":"true",
+    "agilityEquiptment":"false"
+  },
+  "geometry": {
+    "coordinates": [-114.09175383095393, 51.015374395617506],
+    "type": "Point"
+  }
+},
+{
+  "type": "Feature",
+  "properties": {
+    "title": "Riverbend",
+    "quadrant":"SE",
+    "address": "755 Riverbend DR SE",
+    "description": " Off leash area in SE of Calgary, a small neighborhood off leash area.",
+    "fenced":"None",
+    "riverAccess":"false",
+    "agilityEquiptment":"false"
+  },
+  "geometry": {
+    "coordinates": [51.06251541265699,-114.08428562885467],
+    "type": "Point"
+  }
+},
+ {
+  "type": "Feature",
+  "properties": {
+    "title": "McHugh Bluff",
+    "quadrant":"NW",
+    "address": "125 Crescent RD NW",
+    "description": "Off leash dog area in NW Calagry, a great park for walks.",
+    "fenced":"None",
+    "riverAccess":"false",
+    "agilityEquiptment":"false"
+  },
+  "geometry": {
+    "coordinates": [-114.06480058772964, 51.05814774454506],
+    "type": "Point"
+  }
+},
+{
+  "type": "Feature",
+  "properties": {
+    "title": "Rosedale & Sunnyside",
+    "quadrant":"NW",
+    "address": "1101 Crescent RD NW",
+    "description": "Off leash dog area in NW Calagry, a large open neighborhood park, with lots of trees.",
+    "fenced":"Partially",
+    "riverAccess":"false",
+    "agilityEquiptment":"false"
+  },
+  "geometry": {
+    "coordinates": [-114.08427490001871, 51.0624749559971],
+    "type": "Point"
+  }
+},
+{
+  "type": "Feature",
+  "properties": {
+    "title": "Roxboro & Erlton",
+    "quadrant":"SW",
+    "address": "3233 2 ST SW",
+    "description": "Off leash dog area in SW Calagry, a neighborhood park with tons of trees and trials",
+    "fenced":"None",
+    "riverAccess":"false",
+    "agilityEquiptment":"false"
+  },
+  "geometry": {
+    "coordinates": [-114.06854990077699, 51.02514408831522],
+    "type": "Point"
+  }
+},
+{
+  "type": "Feature",
+  "properties": {
+    "title": "Roxboro & Parkhill",
+    "quadrant":"SW",
+    "address": "300 33 Ave SW",
+    "description": "Off leash dog area in SW Calagry, a neighborhood park.",
+    "fenced":"None",
+    "riverAccess":"false",
+    "agilityEquiptment":"false"
+  },
+  "geometry": {
+    "coordinates": [-114.06877000000408, 51.02395183902672],
+    "type": "Point"
+  }
+},
+{
+  "type": "Feature",
+  "properties": {
+    "title": "Rundle Off Leash Park",
+    "quadrant":"NE",
+    "address": "333 Rundleridge Dr NE",
+    "description": "Off leash dog area in NW Calagry, a large open neighborhood park.",
+    "fenced":"Partially",
+    "riverAccess":"false",
+    "agilityEquiptment":"false"
+  },
+  "geometry": {
+    "coordinates": [-113.97400489978574,51.06761853063458],
+    "type": "Point"
+  }
+},
+{
   "type": "Feature",
   "properties": {
     "title": "Sandstone Area 3",
     "quadrant":"NW",
     "address": "80 Sandarac Dr NW",
-    "description": "Off leash dog park in NE Calagry,a small neighborhood strip",
+    "description": "Off leash dog park in NE Calagry,a small neighborhood strip.",
     "fenced":"None",
     "riverAccess":"false",
     "agilityEquiptment":"false"
@@ -36,7 +196,7 @@
     "title": "Sandstone Area 2  ",
     "quadrant":"NW",
     "address": "1880 Berkshire Blvd NW",
-    "description": "Off leash dog area in NW Calagry, a neighborhood park,",
+    "description": "Off leash dog area in NW Calagry, a neighborhood park.",
     "fenced":"None",
     "riverAccess":"false",
     "agilityEquiptment":"false"
@@ -160,7 +320,7 @@
     "title": "SILVER SPRINGS (BOWMONT PARK)",
     "quadrant":"NW",
     "address": "5520 Nose Hill DR NW",
-    "description": "Off leash dog area in NW Calagry, very open park connected to other parks",
+    "description": "Off leash dog area in NW Calagry, very open park connected to other parks.",
     "fenced":"Fully",
     "riverAccess":"true",
     "agilityEquiptment":"false"
@@ -176,7 +336,7 @@
     "title": "5020 Silver Springs Blvd",
     "quadrant":"NW",
     "address": "5020 Silver Springs Blvd NW",
-    "description": "Off leash dog area in NW Calagry, a large open space,",
+    "description": "Off leash dog area in NW Calagry, a large open space.",
     "fenced":"None",
     "riverAccess":"false",
     "agilityEquiptment":"false"
@@ -192,7 +352,7 @@
     "title": "Southland Park",
     "quadrant":"SW",
     "address": "1415 Southland DR SW",
-    "description": "Off leash dog area in SW Calagry, a neighborhood park,",
+    "description": "Off leash dog area in SW Calagry, a neighborhood park.",
     "fenced":"Partially",
     "riverAccess":"false",
     "agilityEquiptment":"false" 
@@ -208,7 +368,7 @@
       "title": "Southwood Park",
       "quadrant":"SW",
       "address": "1323 Southdale CR SW",
-      "description": "Off leash dog area in SW Calagry, a large open neighborhood park,",
+      "description": "Off leash dog area in SW Calagry, a large open neighborhood park.",
       "fenced":"Partially",
       "riverAccess":"false",
       "agilityEquiptment":"false"
@@ -224,7 +384,7 @@
     "title": "Lawrey Gardens Park",
     "quadrant":"SW",
     "address": "Bow River Pathway",
-    "description": "Off leash dog area in SW Calagry, nice trails with river access",
+    "description": "Off leash dog area in SW Calagry, nice trails with river acces.",
     "fenced":"None",
     "riverAccess":"true",
     "agilityEquiptment":"false"
@@ -240,7 +400,7 @@
     "title": "Karl Baker",
     "quadrant":"NW",
     "address": "2840 8 AV NW",
-    "description": "Off leash dog park in NW Calagry, very open neighborhood park",
+    "description": "Off leash dog park in NW Calagry, very open neighborhood park.",
     "fenced":"None",
     "riverAccess":"false",
     "agilityEquiptment":"false" 
@@ -256,7 +416,7 @@
     "title": "Strathcona Park Area 1",
     "quadrant":"SW",
     "address": "795 Strathcona DR SW",
-    "description": "Off leash dog area in SW Calagry, a neighborhood park,",
+    "description": "Off leash dog area in SW Calagry, a neighborhood park.",
     "fenced":"None",
     "riverAccess":"false",
     "agilityEquiptment":"false"
@@ -272,7 +432,7 @@
       "title": "Strathcona Park",
       "quadrant":"SW",
       "address": "111 Stratton CR SW",
-      "description": "Off leash dog area in SW Calagry, a neighborhood park,",
+      "description": "Off leash dog area in SW Calagry, a neighborhood park.",
       "fenced":"None",
       "riverAccess":"false",
       "agilityEquiptment":"false"
@@ -288,7 +448,7 @@
     "title": "Strathcona & Christie Park",
     "quadrant":"SW",
     "address": "2RWP+42 Calgary",
-    "description": "Off leash dog area in SW Calagry, a large open space,",
+    "description": "Off leash dog area in SW Calagry, a large open space.",
     "fenced":"None",
     "riverAccess":"false",
     "agilityEquiptment":"false"
@@ -304,7 +464,7 @@
       "title": "Sunalta Pumphouse Theatre",
       "quadrant":"SW",
       "address": "3P5, Bow River Pathway",
-      "description": "Off leash dog area in SW Calagry, large open space with river access",
+      "description": "Off leash dog area in SW Calagry, large open space with river access.",
       "fenced":"None",
       "riverAccess":"true",
       "agilityEquiptment":"false"
@@ -320,7 +480,7 @@
       "title": "Sunalta Area 1",
       "quadrant":"SW",
       "address": "2WW3+JR Calgary",
-      "description": "Off leash dog area in SW Calagry, tiny area, with no fencing",
+      "description": "Off leash dog area in SW Calagry, tiny area, with no fencing.",
       "fenced":"None",
       "riverAccess":"false",
       "agilityEquiptment":"false"
@@ -336,7 +496,7 @@
       "title": "Taradale Off Leash Dog Park",
       "quadrant":"NE",
       "address": "4369+6P Calgary",
-      "description": "Off leash dog park in NE Calagry, nice neighborhood fully fenced park",
+      "description": "Off leash dog park in NE Calagry, nice neighborhood fully fenced park.",
       "fenced":"Fully",
       "riverAccess":"false",
       "agilityEquiptment":"false"
@@ -352,7 +512,7 @@
       "title": "Thorncliffe (Trollinger ST)",
       "quadrant":"NW",
       "address": "6036 Trollinger ST NE",
-      "description": "Off leash dog park in NW Calagry, Community Cluster",
+      "description": "Off leash dog park in NW Calagry, Community Cluster.",
       "fenced":"None",
       "riverAccess":"false",
       "agilityEquiptment":"false"
@@ -368,7 +528,7 @@
       "title": "Thorncliffe Area (Northmount DR)",
       "quadrant":"NW",
       "address": "280 Northmount DR NW",
-      "description": "Off leash dog park in NW Calagry, Community Cluster",
+      "description": "Off leash dog park in NW Calagry, Community Cluster.",
       "fenced":"None",
       "riverAccess":"false",
       "agilityEquiptment":"false"
@@ -384,7 +544,7 @@
       "title": "Thorncliffe (Touchwood Dr)",
       "quadrant":"NW",
       "address": "6227 Touchwood DR NW",
-      "description": "Off leash dog park in NW Calagry, Community Cluster",
+      "description": "Off leash dog park in NW Calagry, Community Cluster.",
       "fenced":"None",
       "riverAccess":"false",
       "agilityEquiptment":"false"
@@ -400,7 +560,7 @@
       "title": "Thorncliffe (63 Ave)",
       "quadrant":"NW",
       "address": "628 63 AV NW",
-      "description": "Off leash dog park in NW Calagry, Community Cluster",
+      "description": "Off leash dog park in NW Calagry, Community Cluster.",
       "fenced":"None",
       "riverAccess":"false",
       "agilityEquiptment":"false"
@@ -417,7 +577,7 @@
       "title": "Thorncliffe & North Haven (Egert's Park)",
       "quadrant":"NW",
       "address": "151 Thames CL NW",
-      "description": "Off leash dog park in NW Calagry, Community Cluster",
+      "description": "Off leash dog park in NW Calagry, Community Cluster.",
       "fenced":"Partially",
       "riverAccess":"false",
       "agilityEquiptment":"false"
@@ -433,7 +593,7 @@
       "title": "Thorncliffe & North Haven (Egert's Park)",
       "quadrant":"NW",
       "address": "980 48 AV NW",
-      "description": "Off leash dog park in NW Calagry, Community Cluster",
+      "description": "Off leash dog park in NW Calagry, Community Cluster.",
       "fenced":"Partially",
       "riverAccess":"false",
       "agilityEquiptment":"false"
@@ -449,7 +609,7 @@
       "title": "Thorncliffe & skyline west & greenview (Layrock park)",
       "quadrant":"NE",
       "address": "448 Beaver Dam RD NE",
-      "description": "Off leash dog park in NW Calagry,Community Cluster",
+      "description": "Off leash dog park in NW Calagry,Community Cluster.",
       "fenced":"None",
       "riverAccess":"false",
       "agilityEquiptment":"false"
@@ -465,7 +625,7 @@
       "title": "Tuscany Buffer & TucArea 2",
       "quadrant":"NW",
       "address": "4Q88+PG, Calgary",
-      "description": "Off leash dog park in NW Calagry, neighborhood park",
+      "description": "Off leash dog park in NW Calagry, neighborhood park.",
       "fenced":"None",
       "riverAccess":"false",
       "agilityEquiptment":"false"
@@ -481,7 +641,7 @@
       "title": "12 Mile Coulee(Tuscany Area 1)",
       "quadrant":"NW",
       "address": "137 Tuscarora Pl NW",
-      "description": "Off leash dog park in NW Calagry, neighborhood park",
+      "description": "Off leash dog park in NW Calagry, neighborhood park.",
       "fenced":"Partially",
       "riverAccess":"false",
       "agilityEquiptment":"false"
@@ -497,7 +657,7 @@
       "title": "Varsity",
       "quadrant":"NW",
       "address": "216R Valencia RD NW",
-      "description": "Off leash dog park in NW Calagry, very open neighborhood park",
+      "description": "Off leash dog park in NW Calagry, very open neighborhood park.",
       "fenced":"Partially",
       "riverAccess":"false",
       "agilityEquiptment":"false"
@@ -513,7 +673,7 @@
       "title": "West Hillhrust",
       "quadrant":"NW",
       "address": "1025 19 ST NW",
-      "description": "Off leash dog park in NW Calagry, neighborhood park",
+      "description": "Off leash dog park in NW Calagry, neighborhood park.",
       "fenced":"Partially",
       "riverAccess":"false",
       "agilityEquiptment":"false"
@@ -529,7 +689,7 @@
           "title": "Wildwood (Edworthy Park) Area 2",
           "quadrant":"SW",
           "address": "3V52+W76 Calgary",
-          "description": "Off leash dog park in SW Calagry, great scenic walks and river access",
+          "description": "Off leash dog park in SW Calagry, great scenic walks and river access.",
           "fenced":"None",
           "riverAccess":"true",
           "agilityEquiptment":"false"
