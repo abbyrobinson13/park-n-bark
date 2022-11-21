@@ -7,6 +7,7 @@ const DnDCalendar = withDragAndDrop(Calendar)
 
 const Events = () => {
   const myLocalizer = momentLocalizer(moment)
+  const dayLayoutAlgorithm = 'no-overlap'
 
   let events = [
     {
@@ -51,8 +52,15 @@ const Events = () => {
   )
 
   const handleSelectEvent = useCallback(
-    (event) => window.alert(event.title),
-    []
+    (event) => { 
+      let selectedEvent = event.title
+      let r = window.confirm(`${selectedEvent} \nWould you like to delete this event?`)
+    if(r !== false) {
+        setMyEvents(myEvents.filter(event => event.title !== selectedEvent))
+      }
+  }
+  ,
+    [myEvents]
   )
 
   const moveEvent = useCallback(
@@ -87,6 +95,7 @@ const Events = () => {
     <div className='calendar-holder'>
       <DnDCalendar
         localizer={myLocalizer}
+        dayLayoutAlgorithm={dayLayoutAlgorithm}
         defaultDate={new Date()}
         defaultView="month"
         events={myEvents}
