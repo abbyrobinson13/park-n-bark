@@ -376,21 +376,29 @@ footer {
 /* Calendar */
 
 .calendar-holder {
-  height: 90vh;
+  height: 100vh;
   width: 60vw;
 }
 
 .rbc-toolbar button {
-  font-size: inherit;
-  background-color: #fefae0;
+  font-size: inherit !important;
+  background-color: #fefae0 !important;
 }
 
 .rbc-toolbar button.rbc-active {
-  background-color: #9E724D;
-  border-color: #4F2F15;
+  background-color: #9E724D !important;
+  border-color: #4F2F15 !important;
 }
 
 .rbc-toolbar button.rbc-active:focus {
-  background-color: #9E724D;
-  border-color: #4F2F15;
+  background-color: #9E724D !important;
+  border-color: #4F2F15 !important;
+}
+
+.rbc-today {
+  background-color: #2A5C21 !important;
+}
+
+.rbc-off-range-bg {
+  background-color: #4F2F15 !important;
 }
