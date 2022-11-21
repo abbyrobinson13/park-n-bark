@@ -46,7 +46,6 @@ nav * {
 #Nav1 a {
   text-decoration: inherit;
   color: inherit;
-  
 }
 
 #Nav1 .active {
@@ -130,7 +129,6 @@ nav * {
 .Nav-Page {
   display: flex;
   align-items: center;
-  
 }
 
 .Nav-Page:hover{
@@ -140,7 +138,6 @@ nav * {
 .Nav-Page * {
   margin: 0px 0.5em;
 }
-
 
 .App-link {
   color: #61dafb;
@@ -192,6 +189,7 @@ nav * {
 }
 
 /* CSS for default current body  */
+
 .App-header {
   background-color: #282c34;
   min-height: 130vh;
@@ -285,7 +283,6 @@ nav * {
 .dog-star-section{
   background-color: #fefae0 ;
   padding-bottom: 100px;
-
 }
 
 .card {
@@ -312,14 +309,13 @@ nav * {
   padding-top: 6rem;
 }
 
-
 .card-img{
   height: 425px;
   padding: 10px;
 }
 
-
 /* Footer Styles*/
+
 footer {
   background-color: #2a5c21;
   font-size: medium;
@@ -355,20 +351,56 @@ footer {
 #park-display {
   background-color: green;
   grid-row-start: 2;
-  
 }
 
 #search-box {
-  place-self: center;
+  place-self: center stretch;
   grid-column-start: 1;
+  display: flex;
+  justify-content: center;
 }
 
 #map-display {
   background-color: #4F2F15;
   grid-row-start: span 3;
+  place-self: stretch;
 }
 
 #weather-display {
   background-color: #61dafb;
   place-self: center stretch;
+}
+
+/* Calendar */
+
+.calendar-holder {
+  height: 100vh;
+  width: 60vw;
+}
+
+.rbc-toolbar button {
+  font-size: inherit !important;
+  background-color: #fefae0 !important;
+}
+
+.rbc-toolbar button.rbc-active {
+  background-color: #9E724D !important;
+  border-color: #4F2F15 !important;
+}
+
+.rbc-toolbar button.rbc-active:focus {
+  background-color: #9E724D !important;
+  border-color: #4F2F15 !important;
+}
+
+.rbc-today {
+  background-color: #2A5C21 !important;
+}
+
+.rbc-off-range-bg {
+  background-color: #4F2F15 !important;
+}
+
+.rbc-show-more {
+  background-color: #94bfca !important;
 }
