@@ -32,11 +32,9 @@ function createMarker(park) {
 
 function Map() {
   return (
-    <div className="mainMap">
-      {console.log(parksData)}
       <MapContainer
         center={[51.0447, -114.0719]}
-        zoom={10}
+        zoom={11}
         scrollWheelZoom={false}
       >
         <TileLayer
@@ -45,7 +43,6 @@ function Map() {
         />
         {parksData.features.map(createMarker)}
       </MapContainer>
-    </div>
   );
 }
 
