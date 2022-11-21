@@ -1,0 +1,367 @@
+{
+    "features": [
+      {
+        "type": "Feature",
+        "properties": {
+          "title": "Sue Higgins Park",
+          "quadrant": "SE",
+          "address": "Southland Dr. & Deerfoot Tr. S.E.",
+          "description": "Sue Higgins Park, formerly Southland Park, lies along the banks of the Bow River in the southeast and is home to the largest fenced off-leash area in Calgary.",
+          "fenced": "Fully",
+          "riverAccess":"true",
+          "agilityEquiptment":"true"
+        },
+        "geometry": {
+          "coordinates": [-114.029835, 50.967109],
+          "type": "Point"
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "title": "Edworthy Off-Leash Dog Park",
+          "quadrant":"SW",
+          "address": "5427-5539 Edworthy St SW",
+          "description": "Massive and open, off leash dog park in SW Calgary. No fence along Sarcee.",
+          "fenced":"None",
+          "riverAccess":"None",
+          "agilityEquiptment":"None"
+        },
+        "geometry": {
+          "coordinates": [-114.162984, 51.05364],
+          "type": "Point"
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "title": "Elliston Dog Park",
+          "quadrant":"SE",
+          "address": "1827 68 Street SE",
+          "description": "Elliston is a really pretty park, offering grassed open areas, forested pathways and a lake of stored storm water. ",
+          "fenced":"None",
+          "riverAccess":"true",
+          "agilityEquiptment":"false"
+        },
+        "geometry": {
+          "coordinates": [-113.935050, 51.026370],
+          "type": "Point"
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "title": "Scarboro/Sunalta West Park",
+          "quadrant":"SW",
+          "address": "1616 22 Street Sw",
+          "description": " Quiet, partially fenced SW dog park.",
+          "fenced":"Partially",
+          "riverAccess":"false",
+          "agilityEquiptment":"false"
+        },
+        "geometry": {
+          "coordinates": [-114.113550, 51.038740],
+          "type": "Point"
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "title": "Acadia Community Buffer",
+          "quadrant":"SE",
+          "address": "900R Avonlea Place SE",
+          "description": "Small off leash area with a wall to seperate park and main road.",
+          "fenced":"Partially",
+          "riverAccess":"false",
+          "agilityEquiptment":"false"
+        },
+        "geometry": {
+          "coordinates": [-114.044630, 50.973100],
+          "type": "Point"
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "title": "Albert Park/Raddison Heights",
+          "quadrant":"SE",
+          "address": "2204 17 Avenue SE",
+          "description": "Off leash area along Bow River pathway beside the Bow River and Deerfoot Trail.",
+          "fenced":"None",
+          "riverAccess":"true",
+          "agilityEquiptment":"false"
+        },
+        "geometry": {
+          "coordinates": [-114.029650, 51.035010],
+          "type": "Point"
+        }
+      }, {
+        "type": "Feature",
+        "properties": {
+          "title": "Auburn Bay Dog Park",
+          "quadrant":"SE",
+          "address": "Auburn Bay Drive & 52 Street SE",
+          "description": "Large fully fenced off large off lease area in Auburn Bay",
+          "fenced":"Fully",
+          "riverAccess":"false",
+          "agilityEquiptment":"false"
+        },
+        "geometry": {
+          "coordinates": [-113.944350, 50.899560],
+          "type": "Point"
+        }
+      }, {
+        "type": "Feature",
+        "properties": {
+          "title": "Bankview Dog Park",
+          "quadrant":"SW",
+          "address": "1815 23 Avenue SW",
+          "description": "Great for those ball chasing dogs who will not get tired out running up and down hills.",
+          "fenced":"Partially",
+          "riverAccess":"false",
+          "agilityEquiptment":"false"
+        },
+        "geometry": {
+          "coordinates": [-114.10453037116501, 51.03311108534028],
+          "type": "Point"
+        }
+      }, {
+        "type": "Feature",
+        "properties": {
+          "title": "Beddington Area 2",
+          "quadrant":"NW",
+          "address": "88 Bernard Cloze NW",
+          "description": "Off leash area in the neighborhood of Beddington",
+          "fenced":"Partially",
+          "riverAccess":"false",
+          "agilityEquiptment":"false"
+        },
+        "geometry": {
+          "coordinates": [-114.07218481349503, 51.132879300425124],
+          "type": "Point"
+        }
+      }, {
+        "type": "Feature",
+        "properties": {
+          "title": "Beddington Area 1",
+          "quadrant":"NW",
+          "address": "735 Berkshire Blvd NW",
+          "description": "Off leash field in Beddington.",
+          "fenced":"None",
+          "riverAccess":"false",
+          "agilityEquiptment":"false"
+        },
+        "geometry": {
+          "coordinates": [-114.08160165335552, 51.13628666995036],
+          "type": "Point"
+        }
+      }, {
+        "type": "Feature",
+        "properties": {
+          "title": "Connaught Park Off Leash Area",
+          "quadrant":"SW",
+          "address": "1135 14 Avenue SW",
+          "description": "Fully fenced off lease park in Beltine with a seperate small dog play area.",
+          "fenced":"Fully",
+          "riverAccess":"false",
+          "agilityEquiptment":"false"
+        },
+        "geometry": {
+          "coordinates": [-114.08819396932009, 51.040476921227295],
+          "type": "Point"
+        }
+      }, {
+        "type": "Feature",
+        "properties": {
+          "title": "Braeside Off Leash Dog Park",
+          "quadrant":"SW",
+          "address": "Braeside Buffer -SW Corner Anderson Road & 14 Street SW",
+          "description": "Fully fenced community dog park in Braeside",
+          "fenced":"Fully",
+          "riverAccess":"false",
+          "agilityEquiptment":"false"
+        },
+        "geometry": {
+          "coordinates": [-114.09559723070544, 50.95424988456851],
+          "type": "Point"
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "title": "Coach Hill Dog Park",
+          "quadrant":"SW",
+          "address": "6204 Coach Hill Road SW",
+          "description": "Off leash area in SW Calgary",
+          "fenced":"None",
+          "riverAccess":"false",
+          "agilityEquiptment":"false"
+        },
+        "geometry": {
+          "coordinates": [-114.17560536444104, 51.056887320579825],
+          "type": "Point"
+        }
+      }, 
+      {
+        "type": "Feature",
+        "properties": {
+          "title": "Cliff Bungalow Dog Park",
+          "quadrant":"SW",
+          "address": "2325 Cliff Street SW",
+          "description": "Large open off leash field in Upper Mount Royal area. Fence along main road.",
+          "fenced":"Partially",
+          "riverAccess":"false",
+          "agilityEquiptment":"false"
+        },
+        "geometry": {
+          "coordinates": [-114.07622923691653, 51.03421473544127],
+          "type": "Point"
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "title": "Charleswood Off Leash Area 1",
+          "quadrant":"NW",
+          "address": "4735 Charleswood Drive NW",
+          "description": "Off leash area around walking paths.",
+          "fenced":"Partially",
+          "riverAccess":"false",
+          "agilityEquiptment":"false"
+        },
+        "geometry": {
+          "coordinates": [-114.11762854233001, 51.09663528995072],
+          "type": "Point"
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "title": "Charleswood Off Leash Area 2",
+          "quadrant":"NW",
+          "address": "291 Carragana Circle NW",
+          "description": "Small neighborhood off leash area",
+          "fenced":"None",
+          "riverAccess":"false",
+          "agilityEquiptment":"false"
+        },
+        "geometry": {
+          "coordinates": [ -114.11804, 51.09310118237858],
+          "type": "Point"
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "title": "Collingwood Off Leash Area 2",
+          "quadrant":"NW",
+          "address": "1823 John Laurie Blvd NW",
+          "description": "Large open area, with fence between park and John Laurie Blvd.",
+          "fenced":"Partially",
+          "riverAccess":"false",
+          "agilityEquiptment":"false"
+        },
+        "geometry": {
+          "coordinates": [-114.10087250864504, 51.09108255038135],
+          "type": "Point"
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "title": "Collingwood Off Leash Area 1",
+          "quadrant":"NW",
+          "address": "1924 Canberra Road NW",
+          "description": "Small neighborhood off leash area",
+          "fenced":"None",
+          "riverAccess":"false",
+          "agilityEquiptment":"false"
+        },
+        "geometry": {
+          "coordinates": [-114.10843318659443, 51.08464122864589],
+          "type": "Point"
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "title": "Confluence Park (West Nose Creek Park)",
+          "quadrant":"NE",
+          "address": "300 Beddington Trail NE",
+          "description":" Fully fenced off lease area by Nose Hill",
+          "fenced":"Fully",
+          "riverAccess":"false",
+          "agilityEquiptment":"false"
+        },
+        "geometry": {
+          "coordinates": [-114.05493291720556, 51.12962236802491],
+          "type": "Point"
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "title": "Rotary Park Off Leash Dog Park",
+          "quadrant":"NE",
+          "address": "425 1 Street NE",
+          "description": "Large mostly fenced off leash area. Trees act as a barrier instead of one part of fencing.",
+          "fenced":"Partially",
+          "riverAccess":"false",
+          "agilityEquiptment":"false"
+        },
+        "geometry": {
+          "coordinates": [-114.06074279946921, 51.05573076009725],
+          "type": "Point"
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "title": "Dalhousie Offleash Area 2",
+          "quadrant":"NW",
+          "address": "5325 John Laurie Blvd NW",
+          "description": "Large off lease area, fenced along John Laurie Blvd",
+          "fenced":"Partially",
+          "riverAccess":"false",
+          "agilityEquiptment":"false"
+        },
+        "geometry": {
+          "coordinates": [-114.15965316108743, 51.1168562924986],
+          "type": "Point"
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "title": "Dalhousie Offleash Area 1",
+          "quadrant":"NW",
+          "address": "6034 Dalford Road NW",
+          "description": "Neighborhood off lease area around walking paths",
+          "fenced":"Partially",
+          "riverAccess":"false",
+          "agilityEquiptment":"false"
+        },
+        "geometry": {
+          "coordinates": [-114.15410207125187, 51.107300661436994],
+          "type": "Point"
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "title": "Deer Ridge Off Leash Park",
+          "quadrant":"SE",
+          "address": "14620 Deer Ridge Drive SE",
+          "description": "Large off leash area. No fence along Canyon Meadows Drive.",
+          "fenced":"None",
+          "riverAccess":"false",
+          "agilityEquiptment":"false"
+        },
+        "geometry": {
+          "coordinates": [-114.0177238854996, 50.924582019949064],
+          "type": "Point"
+        }
+      }
+    ],
+    "type": "FeatureCollection"
+  }
