@@ -5,11 +5,9 @@ import {
   faLocationPin,
   faHome,
   faCalendar,
-  faSearch,
 } from "@fortawesome/free-solid-svg-icons";
 import { NavLink } from "react-router-dom";
 import logo from "./images/logo.png";
-import { formSubmit } from "../server-functions";
 import Searchbox from "./Searchbox";
 
 const NavBar = () => {
