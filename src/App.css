@@ -372,3 +372,25 @@ footer {
   background-color: #61dafb;
   place-self: center stretch;
 }
+
+/* Calendar */
+
+.calendar-holder {
+  height: 90vh;
+  width: 60vw;
+}
+
+.rbc-toolbar button {
+  font-size: inherit;
+  background-color: #fefae0;
+}
+
+.rbc-toolbar button.rbc-active {
+  background-color: #9E724D;
+  border-color: #4F2F15;
+}
+
+.rbc-toolbar button.rbc-active:focus {
+  background-color: #9E724D;
+  border-color: #4F2F15;
+}
