@@ -5,8 +5,8 @@ const CurrentWeather = ({ currentWeather }) => {
     <div className="weatherapi">
       <p> <img src={icon} alt="icon"/>{currentWeather.weather} </p>
       <p> Conditions: {currentWeather.conditions} </p>
-      <p> Temperature: {currentWeather.temperature}"&deg;C" </p>
-      <p> Feels Like: {currentWeather.feelslike}"&deg;C"</p>
+      <p> Temperature: {currentWeather.temperature}&deg;C </p>
+      <p> Feels Like: {currentWeather.feelslike}&deg;C</p>
     </div>
   );
 };
