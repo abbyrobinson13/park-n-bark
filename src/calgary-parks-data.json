@@ -1,4 +1,5 @@
-[    {
+[    
+  {
   "type": "Feature",
   "properties": {
     "title": "Beddington Heights Area 5",
@@ -540,7 +541,8 @@
     "coordinates": [-114.21600854396384, 51.12527832058669 ],
     "type": "Point"
   }
-},{
+},
+{
   "type": "Feature",
   "properties": {
     "title": "Scenic Acres Off Leash Area 1",
@@ -555,7 +557,8 @@
     "coordinates": [ -114.22505556109576, 51.12515629260096],
     "type": "Point"
   }
-},{
+},
+{
   "type": "Feature",
   "properties": {
     "title": "Scenic Acres Off Leash Area 2",
@@ -570,7 +573,8 @@
     "coordinates": [-114.23009328046602, 51.12431757598652],
     "type": "Point"
   }
-}, {
+}, 
+{
   "type": "Feature",
   "properties": {
     "title": "Shaganappi Park",
