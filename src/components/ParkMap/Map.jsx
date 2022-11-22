@@ -16,6 +16,7 @@ function createMarker(park) {
 
   return (
     <Marker
+      key={park.properties.title}
       position={[myLat, myLong]}
       icon={
         new Icon({
@@ -32,17 +33,17 @@ function createMarker(park) {
 
 function Map() {
   return (
-      <MapContainer
-        center={[51.0447, -114.0719]}
-        zoom={11}
-        scrollWheelZoom={false}
-      >
-        <TileLayer
-          attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
-          url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
-        />
-        {parksData.features.map(createMarker)}
-      </MapContainer>
+    <MapContainer
+      center={[51.0447, -114.0719]}
+      zoom={11}
+      scrollWheelZoom={false}
+    >
+      <TileLayer
+        attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+        url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
+      />
+      {parksData.map(createMarker)}
+    </MapContainer>
   );
 }
 

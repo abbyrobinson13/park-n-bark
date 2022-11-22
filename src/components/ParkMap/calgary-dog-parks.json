@@ -1,5 +1,4 @@
-{
-    "features": [
+[
       {
         "type": "Feature",
         "properties": {
@@ -759,22 +758,6 @@
           },
           "geometry": {
             "coordinates": [-114.07650801883197, 51.110430709153874],
-            "type": "Point"
-          }
-        },
-        {
-          "type": "Feature",
-          "properties": {
-            "title": "Thorncliffe & North Haven (Egert's Park)",
-            "quadrant":"NW",
-            "address": "151 Thames CL NW",
-            "description": "Off leash dog park in NW Calagry, Community Cluster",
-            "fenced":"Partially",
-            "riverAccess":"false",
-            "agilityEquiptment":"false"
-          },
-          "geometry": {
-            "coordinates": [-114.07977271327672, 51.105361446945594],
             "type": "Point"
           }
         },
@@ -1645,25 +1628,6 @@
           }
       },
       {
-          "type": "Feature",
-          "properties": {
-              "title": "Huntington Hills Off Leash Area 1",
-              "quadrant": "NW",
-              "address": "464 Berkley Crescent NW, Calgary, AB T3K 1A8",
-              "description": "Off leash area along pathway",
-              "fenced": "Partially",
-              "riverAccess": "false",
-              "agilityEquiptment": "false"
-          },
-          "geometry": {
-              "coordinates": [
-                  -114.08173888831135,
-                  51.12580190340631
-              ],
-              "type": "Point"
-          }
-      }, 
-      {
         "type": "Feature",
         "properties": {
           "title": "North Haven Off Leash Area",
@@ -1772,22 +1736,6 @@
         },
         "geometry": {
           "coordinates": [-114.00614067634201, 50.98047652538558],
-          "type": "Point"
-        }
-      }, 
-      {
-        "type": "Feature",
-        "properties": {
-          "title": "Parkland Off Leash Area",
-          "quadrant":"SE",
-          "address": "14220 Parkland Blvd SE",
-          "description": "Large off leash area, no fence along Bow Bottom Trail",
-          "fenced":"None",
-          "riverAccess":"false",
-          "agilityEquiptment":"false"
-        },
-        "geometry": {
-          "coordinates": [ -114.02930854435513, 50.92534189717574],
           "type": "Point"
         }
       },
@@ -2447,6 +2395,4 @@
           "type": "Point"
         }
       }
-    ],
-    "type": "FeatureCollection"
-  }
+    ]
