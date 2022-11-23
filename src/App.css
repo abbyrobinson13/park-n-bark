@@ -1,3 +1,8 @@
+
+/* @tailwind base;
+@tailwind components;
+@tailwind utilities; */
+
 /* CSS for the Nav BAr */
 .App {
   text-align: center;
@@ -192,7 +197,7 @@ nav * {
 /* CSS for default current body  */
 
 .App-header {
-  background-color: #282c34;
+  background-color: hsl(89, 59%, 90%);
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -337,7 +342,7 @@ footer {
   grid-template-columns: 40vw 54vw;
   grid-template-rows: 5vh 60vh 20vh;
   gap: 5vmin;
-  overflow: hidden;
+  overflow: hidden; 
 }
 
 @media only screen and (max-width: 800px) {
@@ -347,8 +352,11 @@ footer {
 }
 
 #park-display {
-  background-color: green;
+  color: hsl(111, 47%, 25%);
+  background-color: hsl(36, 29%, 93%);
   grid-row-start: 2;
+  font-weight: 600;
+  border: 3px solid hsl(27, 58%, 20%);
 }
 
 #search-box {
@@ -359,16 +367,35 @@ footer {
 }
 
 #map-display {
-  background-color: #4F2F15;
+  background-color: hsl(89, 59%, 90%);
   grid-row-start: span 3;
   place-self: stretch;
+  border: 3px solid hsl(27, 58%, 20%);
 }
-
+#icon {
+  color: hsl(111, 47%, 25%);
+  font-size: x-large;
+  text-shadow: black;
+  display: flex;
+  align-items: center;
+  padding-right: 50px;
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
 #weather-display {
-  background-color: #61dafb;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: hsl(180, 44%, 87%);
   place-self: center stretch;
-}
+  border: 3px solid hsl(27, 58%, 20%);
 
+
+}
+.weather-info {
+  color: hsl(111, 47%, 25%);
+  font-size: medium;
+}
 /* Calendar */
 
 .calendar-holder {
