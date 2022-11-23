@@ -16,7 +16,7 @@ const DogFactBox = () => {
 
   return (
     <div className="dog-fact">
-      <h2>Dog Fact: {fact}</h2>
+      <h2 id ="fact"> <em>Dog Fact: {fact}</em> </h2>
     </div>
   );
 };

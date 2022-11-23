@@ -260,14 +260,20 @@ nav * {
 /* Dog Fact CSS */
 
 .dog-fact{
+  color: hsl(111, 50%, 0%) ;
   height: 25vh;
   width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #4F2F15;
+  background-color: hsl(36, 29%, 93%);
+  z-index: 0;
 }
-
+#fact {
+  text-transform: capitalize;
+  	
+text-shadow: 6px 6px 0px rgba(91, 160, 106, 0.2);
+}
 /* Stars section - 3 Cards */
 
 .stars-section {
@@ -280,14 +286,14 @@ nav * {
 /* card style */
 
 .dog-star-section{
-  background-color: #fefae0 ;
+  background-color:  hsl(89, 59%, 90%);
   padding-bottom: 100px;
 }
 
 .card {
   width: 20rem;
   height: 35rem;
-  background-color: #B1CA94;
+  background-color: hsl(36, 29%, 93%);
 }
 
 .card:hover{
