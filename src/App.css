@@ -198,6 +198,7 @@ nav * {
 /* CSS for default current body  */
 
 .App-header {
+  color: hsl(111, 47%, 25%);
   background-color: hsl(89, 59%, 90%);
   min-height: 100vh;
   display: flex;
@@ -205,7 +206,6 @@ nav * {
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: black;
 }
 
 /* Carousel css*/
@@ -254,13 +254,14 @@ nav * {
 .slide.active {
   opacity: 1; 
   transition-duration: 1s;
-  transform: scale(1.11);
+  transform: scale(1.112);
 }
 
 /* Dog Fact CSS */
 
 .dog-fact{
-  color: hsl(111, 50%, 0%) ;
+  text-shadow: 6px 6px 0px rgba(91, 160, 106, 0.2);
+  text-transform: capitalize;
   height: 25vh;
   width: 100%;
   display: flex;
@@ -268,12 +269,9 @@ nav * {
   align-items: center;
   background-color: hsl(36, 29%, 93%);
   z-index: 0;
+  border: 3px solid hsl(27, 58%, 20%);
 }
-#fact {
-  text-transform: capitalize;
-  	
-text-shadow: 6px 6px 0px rgba(91, 160, 106, 0.2);
-}
+
 /* Stars section - 3 Cards */
 
 .stars-section {
@@ -345,9 +343,10 @@ footer {
 
 #parks-container {
   display: grid;
+  color: hsl(111, 47%, 25%);
   margin: 5vmin 0;
   grid-template-columns: 40vw 54vw;
-  grid-template-rows: 6vh 60vh 20vh;
+  grid-template-rows: 7vh 60vh 20vh;
   gap: 5vmin;
   overflow: hidden; 
 }
@@ -359,7 +358,6 @@ footer {
 }
 
 #park-display {
-  color: hsl(111, 47%, 25%);
   background-color: hsl(36, 29%, 93%);
   grid-row-start: 2;
   font-weight: 600;
@@ -379,8 +377,8 @@ footer {
   place-self: stretch;
   border: 3px solid hsl(27, 58%, 20%);
 }
+
 #icon {
-  color: hsl(111, 47%, 25%);
   font-size: x-large;
   text-shadow: black;
   display: flex;
@@ -389,23 +387,27 @@ footer {
   padding-top: 25px;
   padding-bottom: 25px;
 }
+
 #weather-display {
   display: flex;
+  font-size: medium;
   justify-content: space-around;
   align-items: center;
   background-color: hsl(180, 44%, 87%);
   place-self: center stretch;
   border: 3px solid hsl(27, 58%, 20%);
-
-
 }
+
 .weather-info {
-  color: hsl(111, 47%, 25%);
-  font-size: medium;
+  display: flex;
+  flex-direction: column;
 }
-#temp {
-  padding: 5px;
+
+#condition {
+  font-size: calc(3vmin + 10px);
+  font-weight: 600;
 }
+
 /* Calendar */
 
 .calendar-holder {
