@@ -4,7 +4,8 @@
 }
 
 nav {
-  position: fixed;
+  position: sticky;
+  top: 0;
   width: 100vw;
   z-index:10;
 }
@@ -192,7 +193,7 @@ nav * {
 
 .App-header {
   background-color: #282c34;
-  min-height: 130vh;
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -204,26 +205,23 @@ nav * {
 /* Carousel css*/
 
 .slider {
-  position: relative;
-  bottom:-14vh;
   height: 100vh;
+  width: 100vw;
   display: flex;
   justify-content: center;
   align-items: center;
- 
 }
 
 .image {
   padding:0;
   width: 90vw;
-  height: 85vh; 
-  border-radius: 10px;
-  
+  height: 90vh; 
 }
+
 .leftArrow {
   position: absolute;
   top: 50%;
-  left: 0vw;
+  left: 2vw;
   font-size: 3rem;
   color: #DEE1B7;
   z-index: 2;
@@ -234,7 +232,7 @@ nav * {
 .rightArrow {
   position: absolute;
   top: 50%;
-  right: 0vw;
+  right: 2vw;
   font-size: 3rem;
   color: #DEE1B7;
   z-index: 2;
@@ -251,22 +249,17 @@ nav * {
   opacity: 1; 
   transition-duration: 1s;
   transform: scale(1.11);
-  position: relative;
-  bottom:7vh;
 }
 
 /* Dog Fact CSS */
 
 .dog-fact{
-  height: 300px;
+  height: 25vh;
   width: 100%;
-  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background-color: #4F2F15;
-}
-
-.dog-fact > h2 {
-  position: relative;
-  top: 125px;
 }
 
 /* Stars section - 3 Cards */
@@ -339,19 +332,17 @@ footer {
  /* Parks Page */
 
 #parks-container {
-  position: relative;
-  top: 4.5vh;
   display: grid;
-  grid-template-columns: 39vw 59vw;
-  grid-template-rows: 10vh 70vh 35vh;
-  gap: 1vmin;
+  margin: 5vmin 0;
+  grid-template-columns: 40vw 54vw;
+  grid-template-rows: 5vh 60vh 20vh;
+  gap: 5vmin;
   overflow: hidden;
 }
 
 @media only screen and (max-width: 800px) {
   #parks-container {
     grid-template-columns:100vw;
-    top: 8vh;
   }
 }
 
@@ -381,8 +372,13 @@ footer {
 /* Calendar */
 
 .calendar-holder {
+  margin: 5vmin 0;
   height: 100vh;
   width: 60vw;
+}
+
+@media only screen and (max-width: 800px) {
+  .calendar-holder {width: 100vw;}
 }
 
 .rbc-toolbar button {
