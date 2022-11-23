@@ -43,7 +43,7 @@ nav * {
 }
 
 #Nav1 {
-  flex: 0 1 25vw;
+  flex: 0 1 35vw;
   display: flex;
   align-items: center;
   text-decoration: none;
@@ -52,6 +52,7 @@ nav * {
 #Nav1 a {
   text-decoration: inherit;
   color: inherit;
+  font-size: calc(10px + 4vmin);
 }
 
 #Nav1 .active {
@@ -129,7 +130,7 @@ nav * {
   list-style: none;
   justify-content: space-around;
   margin-bottom: 0;
-  flex: 0 1 55vw;
+  flex: 0 1 45vw;
 }
 
 .Nav-Page {
@@ -204,7 +205,7 @@ nav * {
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: white;
+  color: black;
 }
 
 /* Carousel css*/
@@ -340,7 +341,7 @@ footer {
   display: grid;
   margin: 5vmin 0;
   grid-template-columns: 40vw 54vw;
-  grid-template-rows: 5vh 60vh 20vh;
+  grid-template-rows: 6vh 60vh 20vh;
   gap: 5vmin;
   overflow: hidden; 
 }
@@ -405,6 +406,11 @@ footer {
   margin: 5vmin 0;
   height: 100vh;
   width: 60vw;
+  color: black;
+}
+
+.calendar-holder * {
+  border-color: black !important;
 }
 
 @media only screen and (max-width: 800px) {
@@ -416,14 +422,16 @@ footer {
   background-color: #fefae0 !important;
 }
 
+.rbc-toolbar button:hover {
+  background-color: #d69b6c !important;
+}
+
 .rbc-toolbar button.rbc-active {
   background-color: #9E724D !important;
-  border-color: #4F2F15 !important;
 }
 
 .rbc-toolbar button.rbc-active:focus {
   background-color: #9E724D !important;
-  border-color: #4F2F15 !important;
 }
 
 .rbc-today {
