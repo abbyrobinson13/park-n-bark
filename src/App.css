@@ -396,6 +396,9 @@ footer {
   color: hsl(111, 47%, 25%);
   font-size: medium;
 }
+#temp {
+  padding: 5px;
+}
 /* Calendar */
 
 .calendar-holder {
