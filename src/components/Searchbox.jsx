@@ -1,42 +1,50 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faSearch } from "@fortawesome/free-solid-svg-icons";
 import { useId, useState } from "react";
+import SearchModal from "./SearchModal";
+
 
 const Searchbox = () => {
   const id = useId();
   const [input, setInput] = useState("");
+  const [park, setPark] = useState()
 
   const formSubmit = (e) => {
     e.preventDefault();
     console.log(id, "Search input:", input);
   };
 
+ useEffect(() => {
+  console.log(park);
+  return(() => <SearchModal parks = {park} />)
+ }, [park])
+
   const countries = [
-    { name: "Belgium", continent: "Europe" },
-    { name: "India", continent: "Asia" },
-    { name: "Bolivia", continent: "South America" },
-    { name: "Ghana", continent: "Africa" },
-    { name: "Japan", continent: "Asia" },
-    { name: "Canada", continent: "North America" },
-    { name: "New Zealand", continent: "Australasia" },
-    { name: "Italy", continent: "Europe" },
-    { name: "South Africa", continent: "Africa" },
-    { name: "China", continent: "Asia" },
-    { name: "Paraguay", continent: "South America" },
-    { name: "Usa", continent: "North America" },
-    { name: "France", continent: "Europe" },
-    { name: "Botswana", continent: "Africa" },
-    { name: "Spain", continent: "Europe" },
-    { name: "Senegal", continent: "Africa" },
-    { name: "Brazil", continent: "South America" },
-    { name: "Denmark", continent: "Europe" },
-    { name: "Mexico", continent: "South America" },
-    { name: "Australia", continent: "Australasia" },
-    { name: "Tanzania", continent: "Africa" },
-    { name: "Bangladesh", continent: "Asia" },
-    { name: "Portugal", continent: "Europe" },
-    { name: "Pakistan", continent: "Asia" },
+    { _id: 0, name: "Belgium", continent: "Europe" },
+    { _id: 1, name: "India", continent: "Asia" },
+    { _id: 2, name: "Bolivia", continent: "South America" },
+    { _id: 3, name: "Ghana", continent: "Africa" },
+    { _id: 4, name: "Japan", continent: "Asia" },
+    { _id: 5, name: "Canada", continent: "North America" },
+    { _id: 6, name: "New Zealand", continent: "Australasia" },
+    { _id: 7, name: "Italy", continent: "Europe" },
+    { _id: 8, name: "South Africa", continent: "Africa" },
+    { _id: 9, name: "China", continent: "Asia" },
+    { _id: 10, name: "Paraguay", continent: "South America" },
+    { _id: 11, name: "Usa", continent: "North America" },
+    { _id: 12, name: "France", continent: "Europe" },
+    { _id: 13, name: "Botswana", continent: "Africa" },
+    { _id: 14, name: "Spain", continent: "Europe" },
+    { _id: 15, name: "Senegal", continent: "Africa" },
+    { _id: 16, name: "Brazil", continent: "South America" },
+    { _id: 17, name: "Denmark", continent: "Europe" },
+    { _id: 18, name: "Mexico", continent: "South America" },
+    { _id: 19, name: "Australia", continent: "Australasia" },
+    { _id: 20, name: "Tanzania", continent: "Africa" },
+    { _id: 21, name: "Bangladesh", continent: "Asia" },
+    { _id: 22, name: "Portugal", continent: "Europe" },
+    { _id: 23, name: "Pakistan", continent: "Asia" },
   ];
 
   return (
@@ -61,11 +69,14 @@ const Searchbox = () => {
             }
           })
           .map((post, index) => (
-            <div className="box" key={index}>
+            <div className="box" key={index} onClick={() => {setPark(post)}}>
               <span>{post.name}</span>
               <span>{post.continent}</span>
             </div>
           ))}
+      </div>
+      <div>
+        <SearchModal />
       </div>
     </div>
   );
