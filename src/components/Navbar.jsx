@@ -24,7 +24,7 @@ const NavBar = () => {
           <div className="dropdown push">
             <NavLink to="/">
               <FontAwesomeIcon icon={faHome} />
-              Home
+               Home
             </NavLink>
           </div>
         </li>
@@ -74,7 +74,9 @@ const NavBar = () => {
           </div>
         </li>
       </ul>
+      <div id="Nav3">
       <Searchbox />
+      </div>
       <div id="Nav4">
         <NavLink to="/login">
           <FontAwesomeIcon icon={faUser} />
