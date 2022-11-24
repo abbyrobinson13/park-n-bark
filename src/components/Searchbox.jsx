@@ -15,10 +15,9 @@ const Searchbox = () => {
     console.log(id, "Search input:", input);
   };
 
- useEffect(() => {
-  console.log(park);
-  return(() => <SearchModal parks = {park} />)
- }, [park])
+ const handleClick = (p) => {
+  setPark(p)
+ }
 
   const countries = [
     { _id: 0, name: "Belgium", continent: "Europe" },
@@ -69,14 +68,14 @@ const Searchbox = () => {
             }
           })
           .map((post, index) => (
-            <div className="box" key={index} onClick={() => {setPark(post)}}>
+            <div className="box" key={index} onClick={() => handleClick(post)}>
               <span>{post.name}</span>
               <span>{post.continent}</span>
             </div>
           ))}
       </div>
       <div>
-        <SearchModal />
+        <SearchModal parks={park}/>
       </div>
     </div>
   );

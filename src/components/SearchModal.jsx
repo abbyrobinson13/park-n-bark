@@ -7,11 +7,14 @@ const SearchModal = (props) => {
     const [open, setOpen] = useState(true);
     const [park, setPark] = useState()
     const handleClose = () => setOpen(false);
+    const handleOpen = () => setOpen(true);
     
     console.log('hi', park)
+
     
     useEffect(() => {
         setPark(props.parks)
+        handleOpen()
     },[props.parks])
 
     const style = {
@@ -44,6 +47,9 @@ const SearchModal = (props) => {
           <Typography id="keep-mounted-modal-description" sx={{ mt: 2 }}>
             Continent: {park.continent}
           </Typography>
+          <button onClick={handleClose}>
+            Exit
+            </button>
           </Box>
       </Modal>
     </div>

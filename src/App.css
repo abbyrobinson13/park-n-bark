@@ -78,7 +78,6 @@ nav * {
   justify-content: center;
   border:1px solid grey;
   padding:2px;
-  overflow: hidden;
 }
 
 .search-bar form{
@@ -290,7 +289,7 @@ nav * {
 .card {
   width: 20rem;
   height: 35rem;
-  background-color: hsl(36, 29%, 93%);
+  background-color: hsl(36, 83%, 45%);
 }
 
 .card:hover{
@@ -450,6 +449,7 @@ footer {
 
 .search-container {
   position: relative;
+  width: 15vw;
 }
 
 #search-box {
@@ -461,9 +461,11 @@ footer {
 
 .list {
   width: 100%;
-  max-height: 25.9vh;
+  max-height: 25.8vh;
   overflow: scroll;
+  overflow-x: hidden;
   position: absolute;
+  display: block;
   color: black;
   font-size: 2vmin;
  }
