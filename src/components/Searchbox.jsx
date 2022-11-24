@@ -1,23 +1,84 @@
-import React from 'react'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faSearch } from '@fortawesome/free-solid-svg-icons'
-import { useId, useState } from 'react'
+import React, { useEffect } from "react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faSearch } from "@fortawesome/free-solid-svg-icons";
+import { useId, useState } from "react";
+import SearchModal from "./SearchModal";
+
 
 const Searchbox = () => {
-    const id = useId();
-    const [input, setInput] = useState("Search");
-    const formSubmit = (e) => {
-        e.preventDefault()
-        console.log(id, 'Search input:', input)
-    }
-    return (
-        <form id={id} className="Nav3" onSubmit={formSubmit}>
-        <input type="search" placeholder={input} onInput={e => setInput(e.target.value)}/>
+  const id = useId();
+  const [input, setInput] = useState("");
+  const [park, setPark] = useState()
+
+  const formSubmit = (e) => {
+    e.preventDefault();
+    console.log(id, "Search input:", input);
+  };
+
+ const handleClick = (p) => {
+  setPark(p)
+ }
+
+  const countries = [
+    { _id: 0, name: "Belgium", continent: "Europe" },
+    { _id: 1, name: "India", continent: "Asia" },
+    { _id: 2, name: "Bolivia", continent: "South America" },
+    { _id: 3, name: "Ghana", continent: "Africa" },
+    { _id: 4, name: "Japan", continent: "Asia" },
+    { _id: 5, name: "Canada", continent: "North America" },
+    { _id: 6, name: "New Zealand", continent: "Australasia" },
+    { _id: 7, name: "Italy", continent: "Europe" },
+    { _id: 8, name: "South Africa", continent: "Africa" },
+    { _id: 9, name: "China", continent: "Asia" },
+    { _id: 10, name: "Paraguay", continent: "South America" },
+    { _id: 11, name: "Usa", continent: "North America" },
+    { _id: 12, name: "France", continent: "Europe" },
+    { _id: 13, name: "Botswana", continent: "Africa" },
+    { _id: 14, name: "Spain", continent: "Europe" },
+    { _id: 15, name: "Senegal", continent: "Africa" },
+    { _id: 16, name: "Brazil", continent: "South America" },
+    { _id: 17, name: "Denmark", continent: "Europe" },
+    { _id: 18, name: "Mexico", continent: "South America" },
+    { _id: 19, name: "Australia", continent: "Australasia" },
+    { _id: 20, name: "Tanzania", continent: "Africa" },
+    { _id: 21, name: "Bangladesh", continent: "Asia" },
+    { _id: 22, name: "Portugal", continent: "Europe" },
+    { _id: 23, name: "Pakistan", continent: "Asia" },
+  ];
+
+  return (
+    <div className="search-container">
+      <form id={id} className="search-bar" onSubmit={formSubmit} value={input}>
+        <input
+          type="search"
+          placeholder="Search"
+          onInput={(e) => setInput(e.target.value)}
+        />
         <button type="submit">
           <FontAwesomeIcon icon={faSearch} />
         </button>
       </form>
-    );
-}
+      <div className="list">
+        {countries
+          .filter((post) => {
+            if (input === "") {
+              return null;
+            } else if (post.name.toLowerCase().includes(input.toLowerCase())) {
+              return post;
+            }
+          })
+          .map((post, index) => (
+            <div className="box" key={index} onClick={() => handleClick(post)}>
+              <span>{post.name}</span>
+              <span>{post.continent}</span>
+            </div>
+          ))}
+      </div>
+      <div>
+        <SearchModal parks={park}/>
+      </div>
+    </div>
+  );
+};
 
-export default Searchbox
+export default Searchbox;

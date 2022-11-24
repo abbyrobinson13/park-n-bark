@@ -52,7 +52,7 @@ nav * {
 #Nav1 a {
   text-decoration: inherit;
   color: inherit;
-  font-size: calc(10px + 4vmin);
+  font-size: calc(5px + 4vmin);
 }
 
 #Nav1 .active {
@@ -72,41 +72,39 @@ nav * {
   color:#9E724D;
 }
 
-.Nav3 {
-  flex: 0 0 15vw;
-  overflow: hidden;
+.search-bar {
+  flex: auto;
   display: flex;
-  align-items: center;
   justify-content: center;
   border:1px solid grey;
   padding:2px;
 }
 
-.Nav3 form{
+.search-bar form{
   height: 20px;
 }
 
-.Nav3 input {
+.search-bar input {
   background-color: #DEE1B7;
 }
 
-.Nav3 input:focus {
+.search-bar input:focus {
   outline-style: none;
 }
 
-.Nav3 * {
+.search-bar > * {
   overflow: hidden;
   margin: 0;
   flex: auto;
   border: none;
 }
 
-.Nav3 button{
+.search-bar button{
   background-color: #DEE1B7;
   flex: 0 1 5em;
 }
 
-.Nav3 button:hover {
+.search-bar button:hover {
   background-color: #B1CA94;
 }
 
@@ -171,7 +169,7 @@ nav * {
   background-color: #DEE1B7;
   color: black;
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.685);
-  z-index: auto 1;
+  z-index: 1;
 }
 
 .dropdown-content *:hover{
@@ -366,13 +364,6 @@ footer {
   border: 3px solid hsl(27, 58%, 20%);
 }
 
-#search-box {
-  place-self: center stretch;
-  grid-column-start: 1;
-  display: flex;
-  justify-content: center;
-}
-
 #map-display {
   background-color: hsl(89, 59%, 90%);
   grid-row-start: span 3;
@@ -455,3 +446,44 @@ footer {
 .rbc-show-more {
   background-color: #94bfca !important;
 }
+
+/* search bar */
+
+.search-container {
+  position: relative;
+  width: 15vw;
+}
+
+#search-box {
+  place-self: center stretch;
+  grid-column-start: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.list {
+  width: 100%;
+  max-height: 25.8vh;
+  overflow: scroll;
+  overflow-x: hidden;
+  position: absolute;
+  display: block;
+  color: black;
+  font-size: 2vmin;
+ }
+
+ .box {
+  border: black ridge 1px;
+  background-color: #B1CA94;
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+  margin: 2px;
+ }
+
+ .MuiBox-root button {
+  background-color: #9E724D;
+  justify-self: center;
+  width: 50%;
+  margin: 0 auto;
+ }

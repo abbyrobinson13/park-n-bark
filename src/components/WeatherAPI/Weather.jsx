@@ -23,7 +23,6 @@ function Weather() {
 
   useMyEffect(() => {
     const id = setInterval(() => {
-      
       getCurrentWeather();
     }, 900000);
 
