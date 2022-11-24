@@ -52,7 +52,7 @@ nav * {
 #Nav1 a {
   text-decoration: inherit;
   color: inherit;
-  font-size: calc(10px + 4vmin);
+  font-size: calc(5px + 4vmin);
 }
 
 #Nav1 .active {
@@ -72,41 +72,40 @@ nav * {
   color:#9E724D;
 }
 
-.Nav3 {
-  flex: 0 0 15vw;
-  overflow: hidden;
+.search-bar {
+  flex: auto;
   display: flex;
-  align-items: center;
   justify-content: center;
   border:1px solid grey;
   padding:2px;
+  overflow: hidden;
 }
 
-.Nav3 form{
+.search-bar form{
   height: 20px;
 }
 
-.Nav3 input {
+.search-bar input {
   background-color: #DEE1B7;
 }
 
-.Nav3 input:focus {
+.search-bar input:focus {
   outline-style: none;
 }
 
-.Nav3 * {
+.search-bar > * {
   overflow: hidden;
   margin: 0;
   flex: auto;
   border: none;
 }
 
-.Nav3 button{
+.search-bar button{
   background-color: #DEE1B7;
   flex: 0 1 5em;
 }
 
-.Nav3 button:hover {
+.search-bar button:hover {
   background-color: #B1CA94;
 }
 
@@ -449,6 +448,10 @@ footer {
 
 /* search bar */
 
+.search-container {
+  position: relative;
+}
+
 #search-box {
   place-self: center stretch;
   grid-column-start: 1;
@@ -457,18 +460,19 @@ footer {
 }
 
 .list {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  width: 100%;
+  max-height: 25.9vh;
+  overflow: scroll;
   position: absolute;
   color: black;
+  font-size: 2vmin;
  }
 
  .box {
-  text-align: center;
   border: black ridge 1px;
+  background-color: #B1CA94;
+  display: flex;
+  flex-direction: column;
   border-radius: 10px;
-  margin: 3px;
-  width: 20rem;
+  margin: 2px;
  }
