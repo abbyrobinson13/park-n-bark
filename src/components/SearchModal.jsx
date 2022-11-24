@@ -22,11 +22,16 @@ const SearchModal = (props) => {
         top: '50%',
         left: '50%',
         transform: 'translate(-50%, -50%)',
-        width: 400,
+        width: '40vw',
+        height: '20vw',
         bgcolor: 'background.paper',
         border: '2px solid #000',
         boxShadow: 24,
         p: 4,
+        'text-align': 'center',
+        display: 'flex',
+        'flex-direction': 'column',
+        'background-color': 'hsl(89, 59%, 90%)'
       };
 
     if(!park){
@@ -41,10 +46,10 @@ const SearchModal = (props) => {
         aria-describedby="keep-mounted-modal-description"
       >
         <Box sx={style}>
-          <Typography id="keep-mounted-modal-title" variant="h6" component="h2">
+          <Typography id="keep-mounted-modal-title" variant="h6" component="h2" sx={{flex: 'auto', 'font-size': '4vmin'}}>
             Country: {park.name}
           </Typography>
-          <Typography id="keep-mounted-modal-description" sx={{ mt: 2 }}>
+          <Typography id="keep-mounted-modal-description" sx={{ mt: 2,  flex: 'auto'}}>
             Continent: {park.continent}
           </Typography>
           <button onClick={handleClose}>

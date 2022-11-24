@@ -478,3 +478,10 @@ footer {
   border-radius: 10px;
   margin: 2px;
  }
+
+ .MuiBox-root button {
+  background-color: #9E724D;
+  justify-self: center;
+  width: 50%;
+  margin: 0 auto;
+ }
