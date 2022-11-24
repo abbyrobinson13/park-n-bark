@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { ImagesData } from "./ImagesData";
-import { FaArrowAltCircleLeft, FaArrowAltCircleRight } from "react-icons/fa";
+import { SlArrowLeft, SlArrowRight } from "react-icons/sl";
 
 function Carousel({ slides }) {
   const [current, setCurrent] = useState(0);
@@ -15,11 +15,11 @@ function Carousel({ slides }) {
   if (!Array.isArray(slides) || slides.length <= 0) {
     return null;
   }
-
+  
   return (
     <section className="slider">
-      <FaArrowAltCircleLeft className="leftArrow" onClick={prevSlide} />
-      <FaArrowAltCircleRight className="rightArrow" onClick={nextSlide} />
+      <SlArrowLeft className="leftArrow" onClick={prevSlide} />
+      <SlArrowRight className="rightArrow" onClick={nextSlide} />
 
       {ImagesData.map((slide, index) => {
         return (

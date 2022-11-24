@@ -24,8 +24,8 @@ nav * {
   height: 6vh;
   align-items: center;
   justify-content: space-between;
-  background-color: #2A5C21;
-  color:white;
+  background-color: hsl(111, 47%, 25%);
+  color:hsl(255, 100%, 100%);
   font-size: 3vmin;
   padding-top: 2vh;
   padding-bottom: 2vh;
@@ -38,7 +38,7 @@ nav * {
 }
 
 .active {
-  background-color: #4f2f1540;
+  background-color: hsl(89, 59%, 30%);
   box-shadow: 5px 5px 5px 5px #4f2f155b;
 }
 
@@ -139,7 +139,8 @@ nav * {
 }
 
 .Nav-Page:hover{
-  color: #9E724D;
+  color: hsl(27, 34%, 60%)
+  ;
 }
 
 .Nav-Page * {
@@ -228,19 +229,20 @@ nav * {
   position: absolute;
   top: 50%;
   left: 2vw;
-  font-size: 3rem;
-  color: #DEE1B7;
+  font-size: 4rem;
+  color: 	hsl(64, 41%, 100%);
   z-index: 2;
   cursor: pointer;
   user-select: none;
+   ;
 }
 
 .rightArrow {
   position: absolute;
   top: 50%;
   right: 2vw;
-  font-size: 3rem;
-  color: #DEE1B7;
+  font-size: 4rem;
+  color: 	hsl(64, 41%, 100%);
   z-index: 2;
   cursor: pointer;
   user-select: none;
@@ -291,7 +293,7 @@ nav * {
 .card {
   width: 20rem;
   height: 35rem;
-  background-color: hsl(36, 29%, 93%);
+  background-color: hsl(36, 29%, 93%) !important;
 }
 
 .card:hover{
