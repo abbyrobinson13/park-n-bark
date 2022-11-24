@@ -4,7 +4,9 @@ import dotenv from "dotenv";
 
 const router = Router();
 dotenv.config();
+
 const weatherUrl = process.env.WEATHER_API_KEY;
+const weatherForecastUrl = process.env.WEATHERFORECAST_API_KEY;
 
 const getWeather = async () => {
   const response = await fetch(weatherUrl);
@@ -17,7 +19,13 @@ const getWeather = async () => {
     feelslike: data.main.feels_like,
   };
 };
-
+const getWeatherForecast = async () => {
+  const response = await fetch(weatherForecastUrl);
+  const forecast = await response.json();
+  return {
+    forecast,
+  };
+};
 router.get("/", async (req, res) => {
   try {
     const currentWeather = await getWeather();
