@@ -26,6 +26,9 @@ const AI = () => {
 
   return (
     <div id='ai-container'>
+      <div>
+        <span>Upload dog image here!</span>
+      </div>
       <input type='file' onChange={onFileChange} />
       {imageUrl && (
         <img ref={imageRef} src={imageUrl} id='ai-image' alt='Preview' />
