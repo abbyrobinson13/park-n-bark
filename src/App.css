@@ -71,42 +71,6 @@ nav * {
   color:(27, 34%, 60%);;
 }
 
-.search-bar {
-  flex: auto;
-  display: flex;
-  justify-content: center;
-  border:1px solid hsl(0, 0%, 50%);
-  padding:2px;
-}
-
-.search-bar form{
-  height: 20px;
-}
-
-.search-bar input {
-  background-color: hsl(64, 41%, 80%);
-}
-
-.search-bar input:focus {
-  outline-style: none;
-}
-
-.search-bar > * {
-  overflow: hidden;
-  margin: 0;
-  flex: auto;
-  border: none;
-}
-
-.search-bar button{
-  background-color: hsl(64, 41%, 80%)
-  ;
-  flex: 0 1 5em;
-}
-
-.search-bar button:hover {
-  background-color: hsl(88, 34%, 69%);
-}
 
 #Nav3 {
   width: 15vw;
@@ -461,6 +425,43 @@ footer {
 
 /* search bar */
 
+.search-bar {
+  flex: auto;
+  display: flex;
+  justify-content: center;
+  border:1px solid hsl(0, 0%, 50%);
+  padding:2px;
+}
+
+.search-bar form{
+  height: 20px;
+}
+
+.search-bar input {
+  background-color: hsl(64, 41%, 80%);
+}
+
+.search-bar input:focus {
+  outline-style: none;
+}
+
+.search-bar > * {
+  overflow: hidden;
+  margin: 0;
+  flex: auto;
+  border: none;
+}
+
+.search-bar button{
+  background-color: hsl(64, 41%, 80%)
+  ;
+  flex: 0 1 5em;
+}
+
+.search-bar button:hover {
+  background-color: hsl(88, 34%, 69%);
+}
+
 .search-container {
   position: relative;
   width: 100%;
@@ -511,9 +512,22 @@ footer {
   gap: 0.5em;
  }
 
- 
+#ai-container input {
+  background-color: hsl(64, 41%, 80%);
+  border: 2px solid hsl(111, 47%, 25%)
+}
 
- #ai-image {
-  width: 50%;
-  height: 50%;
- }
+#ai-container input::file-selector-button {
+  background-color: hsl(64, 41%, 80%);
+  border:0 solid hsl(111, 47%, 25%);
+  border-width: 0 2px 0 0;
+}
+
+#ai-container button {
+  background-color: hsl(64, 41%, 80%);
+}
+
+#ai-image {
+width: 50%;
+height: 50%;
+}
