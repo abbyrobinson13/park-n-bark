@@ -1,7 +1,6 @@
-import React, { useEffect } from "react";
+import React, { useId, useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faSearch } from "@fortawesome/free-solid-svg-icons";
-import { useId, useState } from "react";
 import SearchModal from "./SearchModal";
 
 
@@ -9,6 +8,9 @@ const Searchbox = () => {
   const id = useId();
   const [input, setInput] = useState("");
   const [park, setPark] = useState()
+  const [open, setOpen] = useState(false)
+  const handleClose = () => setOpen(false);
+  const handleOpen = () => setOpen(true);
 
   const formSubmit = (e) => {
     e.preventDefault();
@@ -16,6 +18,7 @@ const Searchbox = () => {
   };
 
  const handleClick = (p) => {
+  
   setPark(p)
  }
 
@@ -47,8 +50,8 @@ const Searchbox = () => {
   ];
 
   return (
-    <div className="search-container">
-      <form id={id} className="search-bar" onSubmit={formSubmit} value={input}>
+    <div className="search-container" onFocus={handleOpen}>
+      <form id={id} className="search-bar" onBlur={handleClose} onSubmit={formSubmit} value={input}>
         <input
           type="search"
           placeholder="Search"
@@ -63,12 +66,14 @@ const Searchbox = () => {
           .filter((post) => {
             if (input === "") {
               return null;
+            } else if (!open){
+              return null
             } else if (post.name.toLowerCase().includes(input.toLowerCase())) {
               return post;
             }
           })
           .map((post, index) => (
-            <div className="box" key={index} onClick={() => handleClick(post)}>
+            <div className="box" key={index} onMouseDown={(event) => event.preventDefault()} onClick={() => handleClick(post)}>
               <span>{post.name}</span>
               <span>{post.continent}</span>
             </div>

@@ -9,9 +9,6 @@ const SearchModal = (props) => {
     const handleClose = () => setOpen(false);
     const handleOpen = () => setOpen(true);
     
-    console.log('hi', park)
-
-    
     useEffect(() => {
         setPark(props.parks)
         handleOpen()
@@ -28,10 +25,10 @@ const SearchModal = (props) => {
         border: '2px solid #000',
         boxShadow: 24,
         p: 4,
-        'text-align': 'center',
+        textAlign: 'center',
         display: 'flex',
-        'flex-direction': 'column',
-        'background-color': 'hsl(89, 59%, 90%)'
+        flexDirection: 'column',
+        backgroundColor: 'hsl(89, 59%, 90%)'
       };
 
     if(!park){
