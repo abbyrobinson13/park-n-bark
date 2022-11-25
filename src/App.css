@@ -39,7 +39,7 @@ nav * {
 
 .active {
   background-color: hsl(89, 59%, 30%);
-  box-shadow: 5px 5px 5px 5px #4f2f155b;
+  box-shadow: 5px 5px 5px 5px hsl(27, 58%, 0%);
 }
 
 #Nav1 {
@@ -69,14 +69,14 @@ nav * {
 }
 
 #Nav1:hover{
-  color:#9E724D;
+  color:(27, 34%, 60%);;
 }
 
 .search-bar {
   flex: auto;
   display: flex;
   justify-content: center;
-  border:1px solid grey;
+  border:1px solid hsl(0, 0%, 50%);
   padding:2px;
 }
 
@@ -85,7 +85,7 @@ nav * {
 }
 
 .search-bar input {
-  background-color: #DEE1B7;
+  background-color: hsl(64, 41%, 80%);
 }
 
 .search-bar input:focus {
@@ -100,12 +100,13 @@ nav * {
 }
 
 .search-bar button{
-  background-color: #DEE1B7;
+  background-color: hsl(64, 41%, 80%)
+  ;
   flex: 0 1 5em;
 }
 
 .search-bar button:hover {
-  background-color: #B1CA94;
+  background-color: hsl(88, 34%, 69%);
 }
 
 #Nav3 {
@@ -124,7 +125,7 @@ nav * {
 }
 
 #Nav4:hover {
-  color: #9E724D;
+  color: hsl(27, 34%, 46%);
 }
 
 .Page-Container {
@@ -141,8 +142,7 @@ nav * {
 }
 
 .Nav-Page:hover{
-  color: hsl(27, 34%, 60%)
-  ;
+  color: hsl(27, 34%, 60%);
 }
 
 .Nav-Page * {
@@ -425,32 +425,40 @@ footer {
 
 .rbc-toolbar button {
   font-size: inherit !important;
-  background-color: #fefae0 !important;
+  background-color: hsl(52, 94%, 94%) !important;
 }
 
 .rbc-toolbar button:hover {
-  background-color: #d69b6c !important;
+  background-color: hsl(27, 56%, 63%) !important;
 }
 
 .rbc-toolbar button.rbc-active {
-  background-color: #9E724D !important;
+  background-color: hsl(27, 34%, 46%) !important;
 }
 
 .rbc-toolbar button.rbc-active:focus {
-  background-color: #9E724D !important;
+  background-color: hsl(27, 34%, 46%) !important;
 }
 
 .rbc-today {
-  background-color: #2A5C21 !important;
+  background-color: hsl(111, 47%, 60%) !important;
 }
 
 .rbc-off-range-bg {
-  background-color: #4F2F15 !important;
+  background-color: hsl(27, 58%, 35%) !important;
 }
 
 .rbc-show-more {
   background-color: #94bfca !important;
 }
+  /* 
+.rbc-day-bg rbc-today {
+  background-color: hsl(120, 100%, 75%) !important
+ ;
+}
+.rbc-row-bg{
+ color: hsl(36, 29%, 93%) !important
+} */
 
 /* search bar */
 
