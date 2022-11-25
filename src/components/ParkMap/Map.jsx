@@ -47,4 +47,4 @@ function Map() {
   );
 }
 
-export default Map;
+export { Map, createMarker }

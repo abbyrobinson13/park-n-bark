@@ -1,7 +1,7 @@
 import React from "react";
 import Searchbox from "../components/Searchbox";
 import Weather from "../components/WeatherAPI/Weather";
-import Map from "../components/ParkMap/Map.jsx";
+import { Map } from "../components/ParkMap/Map.jsx";
 
 const Parks = () => {
   return (

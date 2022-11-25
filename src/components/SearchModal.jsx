@@ -1,61 +1,95 @@
-import React, { useState, useEffect } from 'react'
-import Box from '@mui/material/Box';
-import Modal from '@mui/material/Modal';
-import Typography from '@mui/material/Typography';
+import React, { useState, useEffect } from "react";
+import Box from "@mui/material/Box";
+import Modal from "@mui/material/Modal";
+import Typography from "@mui/material/Typography";
+import { MapContainer, TileLayer} from "react-leaflet";
+import parksData from "../components/ParkMap/calgary-dog-parks.json";
+import { createMarker } from "./ParkMap/Map";
 
 const SearchModal = (props) => {
-    const [open, setOpen] = useState(true);
-    const [park, setPark] = useState()
-    const handleClose = () => setOpen(false);
-    const handleOpen = () => setOpen(true);
-    
-    useEffect(() => {
-        setPark(props.parks)
-        handleOpen()
-    },[props.parks])
+  const [open, setOpen] = useState(true);
+  const [park, setPark] = useState({coords: [51.0447, -114.0719]});
+  const handleClose = () => setOpen(false);
+  const handleOpen = () => setOpen(true); 
 
-    const style = {
-        position: 'absolute',
-        top: '50%',
-        left: '50%',
-        transform: 'translate(-50%, -50%)',
-        width: '40vw',
-        height: '20vw',
-        bgcolor: 'background.paper',
-        border: '2px solid #000',
-        boxShadow: 24,
-        p: 4,
-        textAlign: 'center',
-        display: 'flex',
-        flexDirection: 'column',
-        backgroundColor: 'hsl(89, 59%, 90%)'
-      };
+  useEffect(() => {
+    setPark(props.parks);
+    handleOpen();
+  }, [props.parks]);
 
-    if(!park){
-        return null
-    }
-      return (
+  const style = {
+    position: "absolute",
+    top: "50%",
+    left: "50%",
+    transform: "translate(-50%, -50%)",
+    width: "50vw",
+    height: "50vh",
+    bgcolor: "hsl(89, 59%, 90%)",
+    border: "2px solid #000",
+    boxShadow: 24,
+    p: 4,
+    textAlign: "center",
+    display: "grid",
+    gridTemplateColumns: "25vw 25vw",
+    gridTemplateRows: "45vh 5vh",
+    boxSizing: "content-box",
+    gap: '1em'
+  };
+
+  if (!park) {
+    return null;
+  }
+  return (
     <div>
-        <Modal
+      <Modal
         open={open}
         onClose={handleClose}
-        aria-labelledby="keep-mounted-modal-title"
-        aria-describedby="keep-mounted-modal-description"
+        aria-labelledby='keep-mounted-modal-title'
+        aria-describedby='keep-mounted-modal-description'
       >
         <Box sx={style}>
-          <Typography id="keep-mounted-modal-title" variant="h6" component="h2" sx={{flex: 'auto', 'font-size': '4vmin'}}>
-            Country: {park.name}
-          </Typography>
-          <Typography id="keep-mounted-modal-description" sx={{ mt: 2,  flex: 'auto'}}>
-            Continent: {park.continent}
-          </Typography>
-          <button onClick={handleClose}>
-            Exit
-            </button>
+          <Box sx={{ display: "flex", flexDirection: "column", flex: "auto" }}>
+            <Typography
+              id='keep-mounted-modal-title'
+              variant='h6'
+              component='h2'
+              sx={{ flex: "auto", "font-size": "4vmin" }}
+            >
+              Country: {park.name}
+            </Typography>
+            <Typography
+              id='keep-mounted-modal-description'
+              sx={{ mt: 2, flex: "auto" }}
+            >
+              Continent: {park.continent}
+            </Typography>
           </Box>
+          <Box>
+            <MapContainer
+              center={park.coords}
+              zoom={16}
+              scrollWheelZoom={false}
+            >
+              <TileLayer
+                attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+                url='https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png'
+              />
+              {parksData.map(createMarker)}
+            </MapContainer>
+          </Box>
+          <Box
+            sx={{
+              gridColumnStart: "span 2",
+              textAlign: "center",
+              display: "flex",
+            }}
+          >
+            <button onClick={handleClose}>Exit</button>
+          </Box>
+        </Box>
       </Modal>
     </div>
-  )
-}
+  );
+};
 
-export default SearchModal
+export default SearchModal;
