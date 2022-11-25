@@ -108,6 +108,10 @@ nav * {
   background-color: #B1CA94;
 }
 
+#Nav3 {
+  width: 15vw;
+}
+
 #Nav4 {
   flex: 0 0 5vw;
   overflow: hidden;
@@ -452,7 +456,7 @@ footer {
 
 .search-container {
   position: relative;
-  width: 15vw;
+  width: 100%;
 }
 
 #search-box {

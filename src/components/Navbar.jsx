@@ -74,7 +74,9 @@ const NavBar = () => {
           </div>
         </li>
       </ul>
+      <div id="Nav3">
       <Searchbox />
+      </div>
       <div id="Nav4">
         <NavLink to="/login">
           <FontAwesomeIcon icon={faUser} />
