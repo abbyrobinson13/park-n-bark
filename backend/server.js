@@ -1,7 +1,8 @@
 import dotenv from "dotenv";
 import express from "express";
-import dogFactRouter from './routes/dog-facts-router.js'
-import weatherRouter from './routes/weather-router.js'
+import dogFactRouter from "./routes/dog-facts-router.js";
+import weatherRouter from "./routes/weather-router.js";
+import parkRouter from "./routes/parkRoutes.js";
 
 dotenv.config();
 const app = express();
@@ -23,9 +24,11 @@ async function main() {
   });
 }
 
-app.use('/api/facts', dogFactRouter)
+app.use("/api/facts", dogFactRouter);
 
-app.use('/api/weather', weatherRouter)
+app.use("/api/weather", weatherRouter);
+
+app.use("/api/park", parkRouter);
 
 try {
   main();

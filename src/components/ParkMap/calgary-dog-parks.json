@@ -1756,7 +1756,7 @@
         }
       }, 
       {
-        "type": "Feature",
+        "type":"Feature",
         "properties": {
           "title": "Pineridge Off Leash Dog Park",
           "quadrant":"NE",
