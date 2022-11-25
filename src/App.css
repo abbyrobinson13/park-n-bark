@@ -142,7 +142,8 @@ nav * {
 }
 
 .Nav-Page * {
-  margin: 0px 0.5em;
+margin-left: 7px;
+margin-right: 7px;
 }
 
 .App-link {

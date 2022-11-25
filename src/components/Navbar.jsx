@@ -24,7 +24,7 @@ const NavBar = () => {
           <div className="dropdown push">
             <NavLink to="/">
               <FontAwesomeIcon icon={faHome} />
-              Home
+            <span> Home </span>  
             </NavLink>
           </div>
         </li>
@@ -32,7 +32,7 @@ const NavBar = () => {
           <div className="dropdown">
             <NavLink to="/parks">
               <FontAwesomeIcon icon={faLocationPin} />
-              Parks
+             <span>Parks</span>
             </NavLink>
             <div className="dropdown-content">
               <div className="first-dropdown">
@@ -48,7 +48,7 @@ const NavBar = () => {
           <div className="dropdown">
             <NavLink to="/pet-pals">
               <FontAwesomeIcon icon={faDog} />
-              Pet Pals
+             <span> Pet Pals </span> 
             </NavLink>
             <div className="dropdown-content">
               <div className="first-dropdown">
@@ -64,7 +64,7 @@ const NavBar = () => {
           <div className="dropdown">
             <NavLink to="/events">
               <FontAwesomeIcon icon={faCalendar} />
-              Events
+             <span> Events</span> 
             </NavLink>
             <div className="dropdown-content">
               <div className="first-dropdown">
