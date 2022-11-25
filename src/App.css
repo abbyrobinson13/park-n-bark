@@ -152,6 +152,7 @@ margin-right: 7px;
   border-top: 3px solid #9E724D;
   overflow: hidden;
   width: 10vw;
+  margin: 0;
 }
 
 .dropdown-content .first-dropdown {
