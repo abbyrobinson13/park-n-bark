@@ -8,30 +8,14 @@ dotenv.config();
 const app = express();
 const port = process.env.EXPRESS_PORT;
 
-async function main() {
-  // await mongoose.connect(process.env.MONGODB_URI, {
-  //   dbName: process.env.MONGODB_DBNAME,
-  //   user: process.env.MONGODB_USER,
-  //   pass: process.env.MONGODB_PASSWORD,
-  // });
+app.use(express.json());
 
-  // console.log(`Connected to MongoDB database '${process.env.MONGODB_DBNAME}'`);
-
-  app.use(express.json());
-
-  app.listen(port, () => {
-    console.log(`Web server running on port ${port}`);
-  });
-}
+app.listen(port, () => {
+  console.log(`Web server running on port ${port}`);
+});
 
 app.use("/api/facts", dogFactRouter);
 
 app.use("/api/weather", weatherRouter);
 
 app.use("/api/park", parkRouter);
-
-try {
-  main();
-} catch (err) {
-  console.error(err);
-}
