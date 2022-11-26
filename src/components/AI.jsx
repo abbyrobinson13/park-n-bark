@@ -1,6 +1,5 @@
 import React, { useRef, useState } from "react";
 
-
 const AI = () => {
   const imageRef = useRef(null);
   const [imageUrl, setImageUrl] = useState(null);
@@ -10,7 +9,7 @@ const AI = () => {
   const startModel = async () => {
     setIsLoading(true);
 
-    const ml5 = await import('ml5')
+    const ml5 = await import("ml5");
     const classifier = await ml5.imageClassifier("MobileNet");
     const results = await classifier.classify(imageRef.current);
     setResults(results);
@@ -25,13 +24,15 @@ const AI = () => {
   };
 
   return (
-    <div id='ai-container'>
+    <div id="ai-container">
       <div>
+        <h1> Dog Breed Identification</h1>
+
         <span>Upload dog image here!</span>
       </div>
-      <input type='file' onChange={onFileChange} />
+      <input type="file" onChange={onFileChange} />
       {imageUrl && (
-        <img ref={imageRef} src={imageUrl} id='ai-image' alt='Preview' />
+        <img ref={imageRef} src={imageUrl} id="ai-image" alt="Preview" />
       )}
       {imageUrl && <button onClick={startModel}>Start</button>}
       {isLoading && <div>Loading...</div>}

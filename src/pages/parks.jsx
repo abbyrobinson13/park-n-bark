@@ -9,11 +9,11 @@ const Parks = () => {
     <header className="App-header">
       <div id="parks-container">
         <div id="park-display">
-          <DataTable className="data-table" />
+          <DataTable />
         </div>
-        <div id="search-box">
+        {/* <div id="search-box">
           <Searchbox />
-        </div>
+        </div> */}
         <div id="map-display">
           <Map />
         </div>
