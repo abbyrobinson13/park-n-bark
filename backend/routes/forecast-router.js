@@ -5,26 +5,23 @@ import dotenv from "dotenv";
 const router = Router();
 dotenv.config();
 
-const weatherUrl = process.env.WEATHER_API_KEY;
 const weatherForecastUrl = process.env.WEATHERFORECAST_API_KEY;
 
-const getWeather = async () => {
-  const response = await fetch(weatherUrl);
+const getWeatherForecast = async () => {
+  const response = await fetch(weatherForecastUrl);
   const data = await response.json();
   return {
-    icon: data.weather[0].icon,
-    weather: data.weather[0].main,
-    conditions: data.weather[0].description,
-    temperature: data.main.temp,
-    feelslike: data.main.feels_like,
+    maxtemp: data.list.main.temp_max,
+    mintemp: data.list.main.temp_min,
+    icon: data.list.weather.icon,
+    date: data.list.dt_txt,
   };
 };
-
 router.get("/", async (req, res) => {
   try {
-    const currentWeather = await getWeather();
+    const currentForecast = await getWeatherForecast();
     console.log("Weather loaded");
-    res.send(currentWeather);
+    res.send(currentForecast);
   } catch (err) {
     console.log(err.message);
     res.status(500).send();

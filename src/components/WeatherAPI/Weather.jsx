@@ -30,7 +30,7 @@ function Weather() {
   }, []);
   return (
     <div className="weather">
-      {currentWeather && <CurrentWeather currentWeather={currentWeather} />}
+      {currentWeather && <CurrentWeather currentForecast={currentWeather} />}
     </div>
   );
 }
