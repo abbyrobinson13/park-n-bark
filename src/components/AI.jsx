@@ -26,9 +26,7 @@ const AI = () => {
   return (
     <div id="ai-container">
       <div>
-        <h1> Dog Breed Identification</h1>
-
-        <span>Upload dog image here!</span>
+        <span>Upload dog image here to check breed!</span>
       </div>
       <input type="file" onChange={onFileChange} />
       {imageUrl && (
