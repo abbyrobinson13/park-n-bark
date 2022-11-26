@@ -19,8 +19,8 @@ function DataTable() {
     { name: "Quadrant", field: "quadrant", sortable: true },
     { name: "Address", field: "address", sortable: false },
     { name: "Fenced", field: "fenced", sortable: true },
-    { name: "River Access", field: "riverAccess", sortable: false },
-    { name: "Agility Equiptment", field: "agilityEquiptment", sortable: false },
+    { name: "River Access", field: "riverAccess", sortable: true },
+    { name: "Agility Equiptment", field: "agilityEquiptment", sortable: true },
   ];
 
   useEffect(() => {
