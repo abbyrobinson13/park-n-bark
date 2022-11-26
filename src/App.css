@@ -538,3 +538,8 @@ height: 50%;
 .data-table{
   width: 50% !important;
 }
+
+#park-display {
+  font-size: 2vmin;
+  overflow: scroll;
+}
