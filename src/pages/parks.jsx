@@ -10,12 +10,6 @@ const Parks = () => {
         <div id="park-display">
           <DataTable />
         </div>
-<<<<<<< HEAD
-        {/* <div id="search-box">
-          <Searchbox />
-        </div> */}
-=======
->>>>>>> ad571e9bb22c11772b3b8e28782ad8cc9596ded9
         <div id="map-display">
           <Map />
         </div>
