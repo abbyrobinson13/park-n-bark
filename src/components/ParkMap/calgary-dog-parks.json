@@ -1863,7 +1863,7 @@
           "agilityEquiptment":"false"
         },
         "geometry": {
-          "coordinates": [51.03799575803551, -114.04627967305494],
+          "coordinates": [-114.04627967305494 ,51.03799575803551],
           "type": "Point"
         }
       }, 
@@ -1879,7 +1879,7 @@
           "agilityEquiptment":"false"
         },
         "geometry": {
-          "coordinates": [51.041198864531104, -114.04358073070206],
+          "coordinates": [-114.04358073070206, 51.041198864531104],
           "type": "Point"
         }
       }, 

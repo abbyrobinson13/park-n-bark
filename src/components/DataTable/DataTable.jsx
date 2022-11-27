@@ -12,15 +12,15 @@ function DataTable() {
   const [search, setSearch] = useState("");
   const [sorting, setSorting] = useState({ field: "", order: " " });
 
-  const ITEMS_PER_PAGE = 20;
+  const ITEMS_PER_PAGE = 25;
 
   const headers = [
     { name: "Title", field: "title", sortable: true },
     { name: "Quadrant", field: "quadrant", sortable: true },
     { name: "Address", field: "address", sortable: false },
     { name: "Fenced", field: "fenced", sortable: true },
-    { name: "River Access", field: "riverAccess", sortable: true },
-    { name: "Agility Equiptment", field: "agilityEquiptment", sortable: true },
+    { name: "River Access", field: "riverAccess", sortable: false },
+    { name: "Agility Equiptment", field: "agilityEquiptment", sortable: false },
   ];
 
   useEffect(() => {
