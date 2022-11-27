@@ -8,14 +8,14 @@ import { createMarker } from "./ParkMap/Map";
 
 const SearchModal = (props) => {
   const [open, setOpen] = useState(true);
-  const [park, setPark] = useState({coords: [51.0447, -114.0719]});
+  const [park, setPark] = useState({properties: [], geometry: {coordinates: [51.0447, -114.0719]}});
   const handleClose = () => setOpen(false);
   const handleOpen = () => setOpen(true); 
 
   useEffect(() => {
     setPark(props.parks);
     handleOpen();
-  }, [props.parks]);
+  }, [props.num]);
 
   const style = {
     position: "absolute",
@@ -53,20 +53,20 @@ const SearchModal = (props) => {
               id='keep-mounted-modal-title'
               variant='h6'
               component='h2'
-              sx={{ flex: "auto", "font-size": "4vmin" }}
+              sx={{ flex: "auto", "font-size": "5vmin" }}
             >
-              Country: {park.name}
+              {park.properties.title}
             </Typography>
             <Typography
               id='keep-mounted-modal-description'
               sx={{ mt: 2, flex: "auto" }}
             >
-              Continent: {park.continent}
+              {park.properties.address}
             </Typography>
           </Box>
           <Box>
             <MapContainer
-              center={park.coords}
+              center={[park.geometry.coordinates[1], park.geometry.coordinates[0]]}
               zoom={16}
               scrollWheelZoom={false}
             >
