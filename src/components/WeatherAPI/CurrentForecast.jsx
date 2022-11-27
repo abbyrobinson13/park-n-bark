@@ -1,7 +1,13 @@
 const CurrentForecast = ({ currentForecast }) => {
-    // let icon = `http://openweathermap.org/img/wn/${currentWeather.icon}@2x.png`
+let icon = `http://openweathermap.org/img/wn/${currentForecast.icon}@2x.png`
     return (
-     <div></div>
+     <div>
+    <div> <img src={icon}/></div>
+
+    <div>{currentForecast.maxtemp} | {currentForecast.mintemp} </div> 
+     
+     
+     </div>
      );
   };
   

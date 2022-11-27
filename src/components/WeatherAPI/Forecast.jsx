@@ -1,9 +1,9 @@
 import "../../App.css"
 import { useEffect as useMyEffect, useState } from "react";
-import CurrentForecast from "./CurrentWeather";
+import CurrentForecast from "./CurrentForecast.jsx";
 
 function Forecast() {
-  const [currentForecast, setCurrentForecast] = useState({conditions: "Loading...", temperature: "Loading...", feelslike: "Loading..."});
+  const [currentForecast, setCurrentForecast] = useState({maxtemp:"loading..",mintemp:"loading.."});
   const Forecast = async () => {
     try {
       let response = await fetch("/api/forecast");

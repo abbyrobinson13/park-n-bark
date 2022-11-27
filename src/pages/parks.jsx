@@ -14,6 +14,7 @@ const Parks = () => {
           <Map />
         </div>
         <Weather />
+        
       </div>
     </header>
   );
