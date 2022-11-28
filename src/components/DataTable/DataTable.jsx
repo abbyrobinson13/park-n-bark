@@ -4,15 +4,23 @@ import PaginationComponent from "./Pagination.jsx";
 import TableHeader from "./TableHeader.jsx";
 import Search from "./Search.jsx";
 import "bootstrap/dist/css/bootstrap.min.css";
+import SearchModal from "../SearchModal.jsx";
 
 function DataTable() {
   const [parks, setParks] = useState([]);
+  const [park, setPark] = useState()
   const [totalItems, setTotalItems] = useState(0);
   const [currentPage, setCurrentPage] = useState(1);
   const [search, setSearch] = useState("");
   const [sorting, setSorting] = useState({ field: "", order: " " });
+  const [num, setNum] = useState(0)
 
   const ITEMS_PER_PAGE = 25;
+
+  const handleClick = (p) => {
+  setNum(() => num + 1)
+  setPark(p)
+ }
 
   const headers = [
     { name: "Title", field: "title", sortable: true },
@@ -99,7 +107,7 @@ function DataTable() {
 
             <tbody>
               {commentData.map((comment) => (
-                <tr>
+                <tr onClick={() => handleClick(comment)}>
                   <th scope="row">{comment.properties.title}</th>
                   <th>{comment.properties.quadrant}</th>
                   <th>{comment.properties.address}</th>
@@ -111,6 +119,9 @@ function DataTable() {
             </tbody>
           </table>
         </div>
+      </div>
+      <div>
+        <SearchModal parks={park} num={num}/>
       </div>
     </>
   );

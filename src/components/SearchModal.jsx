@@ -7,7 +7,7 @@ import parksData from "../components/ParkMap/calgary-dog-parks.json";
 import { createMarker } from "./ParkMap/Map";
 
 const SearchModal = (props) => {
-  const [open, setOpen] = useState(true);
+  const [open, setOpen] = useState(false);
   const [park, setPark] = useState({properties: [], geometry: {coordinates: [51.0447, -114.0719]}});
   const handleClose = () => setOpen(false);
   const handleOpen = () => setOpen(true); 
@@ -16,22 +16,6 @@ const SearchModal = (props) => {
     setPark(props.parks);
     handleOpen();
   }, [props.num]);
-
-const riverCheck = () => {
-  if(park.properties.riverAccess){
-    return 'River Access: Yes'
-  }else {
-    return 'River Access: No'
-  }
-}
-
-const agilityCheck = () => {
-  if(park.properties.agilityEquiptment){
-    return 'Agility Equpiment: Yes'
-  }else {
-    return 'Agility Equipment: No'
-  }
-}
 
   const style = {
     position: "absolute",
@@ -84,10 +68,10 @@ const agilityCheck = () => {
               {`Fenced: ${park.properties.fenced}`} 
             </Typography>
             <Typography sx={{border: '1px solid hsl(27, 58%, 20%)', flex: 'auto'}}>
-            {riverCheck()}
+            {park.properties.riverAccess ? 'River Access: Yes' : 'River Access: No'}
             </Typography>
             <Typography sx={{border: '1px solid hsl(27, 58%, 20%)', flex: 'auto'}}>
-            {agilityCheck()}
+            {park.properties.agilityEquiptment ? 'Agility Equipment: Yes' : 'Agility Equipment: No'}
             </Typography>
             </Box>
           </Box>
