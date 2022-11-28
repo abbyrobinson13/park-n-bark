@@ -1,94 +1,62 @@
-import { useState, useCallback} from 'react'
+import { useState, useEffect} from 'react'
 import { Calendar, momentLocalizer } from 'react-big-calendar'
 import withDragAndDrop from 'react-big-calendar/lib/addons/dragAndDrop'
 import moment from 'moment'
+import { createEvent, deleteEvent, listEvents, updateEvent } from '../server-functions'
 
 const DnDCalendar = withDragAndDrop(Calendar)
 
 const Events = () => {
   const myLocalizer = momentLocalizer(moment)
   const dayLayoutAlgorithm = 'no-overlap'
+  const [myEvents, setMyEvents] = useState([])
 
-  let events = [
-    {
-      id: 0,
-      title: 'All Day Event very long title',
-      allDay: true,
-      start: new Date(2022, 10, 1),
-      end: new Date(2022, 10, 12),
-    },
-    {
-      id: 1,
-      title: 'Long Event',
-      start: new Date(2022, 10, 7),
-      end: new Date(2022, 10, 10),
-    },
+  const getEvents = async() => {
+    const events = await listEvents()
+    const newEvents = events.map(e => {
+      const newStart = new Date(e.start)
+      const newEnd = new Date(e.end)
+      return({_id: e._id, title: e.title, start: newStart, end: newEnd })
+    })
+    setMyEvents(newEvents)
+  }
   
-    {
-      id: 2,
-      title: 'This week gets an event',
-      start: new Date(2022, 10, 13, 0, 0, 0),
-      end: new Date(2022, 10, 20, 0, 0, 0),
-    },
+  useEffect(() => {
+    getEvents()
+  }, [])
 
-    {
-      id: 3,
-      title: 'Project 2 Due',
-      start: new Date(2022, 11, 2),
-      end: new Date(2022, 11, 2)
-    }
-  ]
-
-  const [myEvents, setMyEvents] = useState(events)
-
-  const handleSelectSlot = useCallback(
-    ({ start, end }) => {
+  const handleSelectSlot = async({ start, end }) => {
       const title = window.prompt('New Event name')
       if (title) {
-        setMyEvents((prev) => [...prev, { start, end, title }])
+        await createEvent({ start, end, title })
+        await getEvents()
       }
-    },
-    [setMyEvents]
-  )
+    }
 
-  const handleSelectEvent = useCallback(
-    (event) => { 
+  const handleSelectEvent = async(event) => {
       let selectedEvent = event.title
       let r = window.confirm(`${selectedEvent} \nWould you like to delete this event?`)
     if(r !== false) {
-        setMyEvents(myEvents.filter(event => event.title !== selectedEvent))
+        await deleteEvent(event)
+        await getEvents()
       }
   }
-  ,
-    [myEvents]
-  )
 
-  const moveEvent = useCallback(
-    ({ event, start, end, isAllDay: droppedOnAllDaySlot = false }) => {
+  const moveEvent = async ({ event, start, end, isAllDay: droppedOnAllDaySlot = false }) => {
       const { allDay } = event
+      const id = event._id
       if (!allDay && droppedOnAllDaySlot) {
         event.allDay = true
       }
+      await updateEvent({start, end, id})
+      await getEvents()
+    }
 
-      setMyEvents((prev) => {
-        const existing = prev.find((ev) => ev.id === event.id) ?? {}
-        const filtered = prev.filter((ev) => ev.id !== event.id)
-        return [...filtered, { ...existing, start, end, allDay }]
-      })
-    },
-    [setMyEvents]
-  )
-
-  const resizeEvent = useCallback(
-    ({ event, start, end }) => {
-      setMyEvents((prev) => {
-        const existing = prev.find((ev) => ev.id === event.id) ?? {}
-        const filtered = prev.filter((ev) => ev.id !== event.id)
-        return [...filtered, { ...existing, start, end }]
-      })
-    },
-    [setMyEvents]
-  )
+  const resizeEvent = async({ start, end, event }) => {
+      const id = event._id
+      await updateEvent({start, end, id})
+      await getEvents()
+    }
 
   return (
     <header className="App-header">

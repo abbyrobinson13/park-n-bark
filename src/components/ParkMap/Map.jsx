@@ -6,13 +6,9 @@ import "./Map.css";
 import { MapContainer, TileLayer, useMap, Marker, Popup } from "react-leaflet";
 
 function createMarker(park) {
-  console.log("park is:", park);
-  console.log("geometry is:", park.geometry);
-  console.log("coords are:", park.geometry.coordinates);
-
   let myLat = park.geometry.coordinates[1];
   let myLong = park.geometry.coordinates[0];
-  console.log("lat: ", myLat, "lng: ", myLong);
+  
 
   return (
     <Marker

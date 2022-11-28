@@ -6,9 +6,10 @@ const router = Router();
 router.get("/", async (req, res) => {
   try {
     const allParks = await getAllParks();
+    console.log('Parks Sent')
     res.send(allParks);
   } catch (error) {
-    debug(error);
+    console.error(error);
     res.status(500).send(error);
   }
 });
