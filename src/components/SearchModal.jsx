@@ -17,6 +17,22 @@ const SearchModal = (props) => {
     handleOpen();
   }, [props.num]);
 
+const riverCheck = () => {
+  if(park.properties.riverAccess){
+    return 'River Access: Yes'
+  }else {
+    return 'River Access: No'
+  }
+}
+
+const agilityCheck = () => {
+  if(park.properties.agilityEquiptment){
+    return 'Agility Equpiment: Yes'
+  }else {
+    return 'Agility Equipment: No'
+  }
+}
+
   const style = {
     position: "absolute",
     top: "50%",
@@ -59,9 +75,18 @@ const SearchModal = (props) => {
             </Typography>
             <Typography
               id='keep-mounted-modal-description'
-              sx={{ mt: 2, flex: "auto" }}
+              sx={{ mt: 2, flex: "auto", fontSize: '3vmin' }}
             >
               {park.properties.address}
+            </Typography>
+            <Typography>
+              {`Fenced: ${park.properties.fenced}`} 
+            </Typography>
+            <Typography>
+            {riverCheck()}
+            </Typography>
+            <Typography>
+            {agilityCheck()}
             </Typography>
           </Box>
           <Box>
