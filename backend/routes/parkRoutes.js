@@ -9,7 +9,7 @@ router.get("/", async (req, res) => {
     console.log('Parks Sent')
     res.send(allParks);
   } catch (error) {
-    debug(error);
+    console.error(error);
     res.status(500).send(error);
   }
 });
