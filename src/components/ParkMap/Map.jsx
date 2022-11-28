@@ -1,9 +1,8 @@
-import React from "react";
+import React, {useState, useEffect, } from "react";
 import markerIconPng from "leaflet/dist/images/marker-icon.png";
 import { Icon } from "leaflet";
-import parksData from "./calgary-dog-parks.json";
 import "./Map.css";
-import { MapContainer, TileLayer, useMap, Marker, Popup } from "react-leaflet";
+import { MapContainer, TileLayer, Marker, Popup } from "react-leaflet";
 
 function createMarker(park) {
   let myLat = park.geometry.coordinates[1];
@@ -28,6 +27,17 @@ function createMarker(park) {
 }
 
 function Map() {
+  const [parks, setParks] = useState([])
+
+  useEffect(() => {
+    const parksAndReq = async() => {
+    const serverReq = await fetch('/api/park')
+    const parkData = await serverReq.json()
+    setParks(parkData)
+    }
+    parksAndReq()
+  }, [])
+
   return (
     <MapContainer
       center={[51.0447, -114.0719]}
@@ -38,7 +48,7 @@ function Map() {
         attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
         url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
       />
-      {parksData.map(createMarker)}
+      {parks.map(createMarker)}
     </MapContainer>
   );
 }

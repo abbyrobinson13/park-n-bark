@@ -3,7 +3,6 @@ import Box from "@mui/material/Box";
 import Modal from "@mui/material/Modal";
 import Typography from "@mui/material/Typography";
 import { MapContainer, TileLayer} from "react-leaflet";
-import parksData from "../components/ParkMap/calgary-dog-parks.json";
 import { createMarker } from "./ParkMap/Map";
 
 const SearchModal = (props) => {
@@ -78,14 +77,14 @@ const SearchModal = (props) => {
           <Box>
             <MapContainer
               center={[park.geometry.coordinates[1], park.geometry.coordinates[0]]}
-              zoom={16}
+              zoom={15}
               scrollWheelZoom={false}
             >
               <TileLayer
                 attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
                 url='https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png'
               />
-              {parksData.map(createMarker)}
+              {createMarker(park)}
             </MapContainer>
           </Box>
           <Box
