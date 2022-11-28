@@ -79,15 +79,17 @@ const agilityCheck = () => {
             >
               {park.properties.address}
             </Typography>
-            <Typography>
+            <Box sx={{display: "flex", gap: 1}}>
+            <Typography sx={{border: '1px solid hsl(27, 58%, 20%)', flex: 'auto'}}>
               {`Fenced: ${park.properties.fenced}`} 
             </Typography>
-            <Typography>
+            <Typography sx={{border: '1px solid hsl(27, 58%, 20%)', flex: 'auto'}}>
             {riverCheck()}
             </Typography>
-            <Typography>
+            <Typography sx={{border: '1px solid hsl(27, 58%, 20%)', flex: 'auto'}}>
             {agilityCheck()}
             </Typography>
+            </Box>
           </Box>
           <Box>
             <MapContainer
