@@ -4,7 +4,7 @@ import CurrentForecast from "./CurrentForecast.jsx";
 
 function Forecast() {
   const [currentForecast, setCurrentForecast] = useState({maxtemp:"loading..",mintemp:"loading.."});
-  const Forecast = async () => {
+  const getCurrentForecast = async () => {
     try {
       let response = await fetch("/api/forecast");
       let values = await response.json();
@@ -17,13 +17,13 @@ function Forecast() {
   
   useMyEffect(() => {
     console.log("first forecast render");
-    Forecast()
+    getCurrentForecast()
     return () => console.log("forecast unmounted");
   }, []);
 
   useMyEffect(() => {
     const id = setInterval(() => {
-      Forecast();
+      getCurrentForecast();
     }, 900000);
 
     return () => clearInterval(id);

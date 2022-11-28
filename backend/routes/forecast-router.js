@@ -11,6 +11,7 @@ const getWeatherForecast = async () => {
   const response = await fetch(weatherForecastUrl);
   const data = await response.json();
   return {
+    key: data.list.dt,
     maxtemp: data.list.main.temp_max,
     mintemp: data.list.main.temp_min,
     icon: data.list.weather.icon,
@@ -26,6 +27,7 @@ router.get("/", async (req, res) => {
     console.log(err.message);
     res.status(500).send();
   }
+  console.log(weatherForecastUrl);
 });
 
 export default router;
