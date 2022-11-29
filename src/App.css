@@ -611,9 +611,9 @@ button, input, optgroup, select, textarea {
 /* Table row 2 */
 
 .table>:not(caption)>*>* {
-  color: hsl(89, 59%, 90%);
-    padding: 0.5rem 0.5rem;
-    background-color: hsl(111deg 47% 25%);
-    border-bottom-width: 1px;
-    box-shadow: inset 0 0 0 9999px var(--bs-table-accent-bg);
+  padding: 0.5rem 0.5rem !important;
+  color: #fff !important;
+  background-color: hsl(111deg 47% 25%) !important;
+  border-bottom-width: 1px !important;
+  box-shadow: inset 0 0 0 9999px var(--bs-table-accent-bg) !important;
 }
