@@ -20,20 +20,22 @@ nav * {
 
 .Nav-Container {
   display: flex;
-  height: 6vh;
+  height: 4vh;
   align-items: center;
   justify-content: space-between;
   background-color: hsl(111, 47%, 25%);
   color:hsl(255, 100%, 100%);
-  font-size: 3vmin;
-  padding-top: 2vh;
-  padding-bottom: 2vh;
+  font-size: 2vmin;
+  padding-top: 1vh;
+  padding-bottom: 1vh;
 }
 
 .nav-title {
   position: relative;
-  left: 12vw;
+  left: 10vw;
   font-weight: bold;
+  font-size: xx-large;
+  margin-bottom: 10px;
 }
 
 .active {
@@ -62,8 +64,8 @@ nav * {
 .logo-image{
   position: absolute;
   top: 0px;
-  height: 15vh;
-  width: 12vw;
+  height: 12vh;
+  width: 9vw;
   margin-top: -0.7vh;
 }
 
@@ -231,7 +233,7 @@ margin-right: 7px;
 .dog-fact{
   text-shadow: 6px 6px 0px rgba(91, 160, 106, 0.2);
   text-transform: capitalize;
-  height: 25vh;
+  height: 20vh;
   width: 100%;
   display: flex;
   justify-content: center;
