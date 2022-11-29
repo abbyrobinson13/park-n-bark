@@ -291,11 +291,13 @@ margin-right: 7px;
 /* Footer Styles*/
 
 footer {
-  background-color: #2a5c21;
+  background-color: hsl(111, 47%, 25%);
   font-size: medium;
   text-align: center;
-  padding: 20px 0;
-  color: #ffff;
+  padding: 15px 0;
+  color: hsl(0, 0%, 100%);
+  font-weight: 600;
+  
 }
 
 /* edit images on cards*/
