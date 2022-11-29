@@ -6,7 +6,6 @@ const router = Router();
 dotenv.config();
 
 const weatherUrl = process.env.WEATHER_API_KEY;
-const weatherForecastUrl = process.env.WEATHERFORECAST_API_KEY;
 
 const getWeather = async () => {
   const response = await fetch(weatherUrl);

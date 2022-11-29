@@ -5,6 +5,7 @@ import TableHeader from "./TableHeader.jsx";
 import Search from "./Search.jsx";
 import "bootstrap/dist/css/bootstrap.min.css";
 import SearchModal from "../SearchModal.jsx";
+import { Typography } from "@mui/material";
 
 function DataTable() {
   const [parks, setParks] = useState([]);
@@ -76,7 +77,7 @@ function DataTable() {
 
   return (
     <>
-      <h>"Park Data Table"</h>
+      <Typography variant="h4" paddingBottom={2} paddingTop={2}>Off Leash Parks</Typography>
       <div className="row w-100">
         <div className="col mb-3 col-12 text-center">
           <div className="row">

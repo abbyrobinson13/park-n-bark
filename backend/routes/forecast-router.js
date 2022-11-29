@@ -21,13 +21,12 @@ const getWeatherForecast = async () => {
 router.get("/", async (req, res) => {
   try {
     const currentForecast = await getWeatherForecast();
-    console.log("Weather loaded");
+    console.log("Forecast loaded");
     res.send(currentForecast);
   } catch (err) {
     console.log(err.message);
     res.status(500).send();
   }
-  console.log(weatherForecastUrl);
 });
 
 export default router;
