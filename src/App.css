@@ -503,6 +503,15 @@ footer {
   margin: 0 auto;
  }
 
+ .big-search {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+  grid-template-rows: 1fr 1fr;
+  gap: 3em;
+  justify-content: center;
+ }
+
  /* AI */
 
  #ai-container {
