@@ -90,7 +90,7 @@ nav * {
 }
 
 #Nav4:hover {
-  color: hsl(27, 34%, 46%);
+  color: hsl(30, 34%, 60%);
 }
 
 .Page-Container {
@@ -130,11 +130,12 @@ margin-right: 7px;
 }
 
 .Nav-Page a:hover {
-  color: inherit;
+  color: hsl(30, 34%, 60%);
 }
 
 .dropdown-content {
   display: none;
+  
   position: absolute;
   background-color: #DEE1B7;
   color: black;
@@ -426,12 +427,17 @@ footer {
   flex: auto;
   display: flex;
   justify-content: center;
-  border:1px solid hsl(0, 0%, 50%);
   padding:2px;
+  background-color: hsl(89, 59%, 90%) ;
+  background-clip: padding-box ;
+  border: 3px solid hsl(27, 58%, 20%);
+  appearance: none;
+  border-radius: 0.375rem;
+  transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
 }
 
 .search-bar form{
-  height: 20px;
+  height: 15px;
 }
 
 .search-bar input {
@@ -478,13 +484,14 @@ footer {
   overflow-x: hidden;
   position: absolute;
   display: block;
-  color: black;
+  color: hsl(111, 47%, 25%);
   font-size: 2vmin;
  }
 
  .box {
-  border: black ridge 1px;
-  background-color: #B1CA94;
+  border: hsl(27, 58%, 20%) ridge 1.5px;
+  background-color: hsl(89, 59%, 90%) 
+  ;
   display: flex;
   flex-direction: column;
   border-radius: 10px;
