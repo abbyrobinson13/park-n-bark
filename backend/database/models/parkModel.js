@@ -45,3 +45,8 @@ export const getAllParks = async () => {
   const parks = await Park.find();
   return parks;
 };
+
+export const getSomeParks = async(id) => {
+  const parks = await Park.find(id)
+  return parks
+}

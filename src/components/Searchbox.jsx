@@ -2,7 +2,7 @@ import React, { useId, useState, useEffect } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faSearch } from "@fortawesome/free-solid-svg-icons";
 import SearchModal from "./SearchModal";
-
+import { useNavigate } from 'react-router-dom'
 
 const Searchbox = () => {
   const id = useId();
@@ -13,10 +13,13 @@ const Searchbox = () => {
   const [num, setNum] = useState(0)
   const handleClose = () => setOpen(false);
   const handleOpen = () => setOpen(true);
+  const navigate = useNavigate()
+
 
   const formSubmit = (e) => {
-    e.preventDefault();
+    e.preventDefault()
     console.log(id, "Search input:", input);
+    navigate(`/search?search=${input}`)
   };
 
  const handleClick = (p) => {
