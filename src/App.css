@@ -34,8 +34,7 @@ nav * {
   position: relative;
   left: 10vw;
   font-weight: bold;
-  font-size: xx-large;
-  margin-bottom: 10px;
+  font-size: calc(10px + 2.5vmin);
 }
 
 .active {
@@ -350,14 +349,13 @@ footer {
   text-shadow: black;
   display: flex;
   align-items: center;
-  padding-right: 50px;
-  padding-top: 25px;
-  padding-bottom: 25px;
+  flex-shrink: 1;
+  overflow: hidden;
 }
 
 #weather-display {
   display: flex;
-  font-size: medium;
+  font-size: 2vmin;
   justify-content: space-around;
   align-items: center;
   background-color: hsl(180, 44%, 87%);
