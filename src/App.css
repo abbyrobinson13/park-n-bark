@@ -614,7 +614,7 @@ height: 50%;
 }
 /* Table row 1 */
 .table-striped>tbody>tr:nth-of-type(odd)>* {
-  --bs-table-accent-bg: #ffffff !important;
+  --bs-table-accent-bg: hsl(89, 59%, 90%) !important;
   color: hsl(111, 47%, 25%) !important;
 }
 /* Table row 2 */
