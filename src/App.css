@@ -416,16 +416,7 @@ footer {
 .rbc-show-more {
   background-color: #94bfca !important;
 }
-  /* 
-.rbc-day-bg rbc-today {
-  background-color: hsl(120, 100%, 75%) !important
- ;
-}
-.rbc-row-bg{
- color: hsl(36, 29%, 93%) !important
-} */
 
-/* search bar */
 
 .search-bar {
   flex: auto;
@@ -541,7 +532,7 @@ height: 50%;
 }
 
 #park-display {
-  background-color: #ceeceb;
+  background-color: hsl(178, 44%, 95%);
   font-size: 2vmin;
   overflow: scroll;
 }
