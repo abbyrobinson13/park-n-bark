@@ -1,5 +1,5 @@
 import React from 'react'
-import AI from '../components/AI'
+import AI from '../components/AI/AI'
 
 const Feed = () => {
   return (

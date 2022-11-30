@@ -10,7 +10,7 @@ const AI = () => {
     setIsLoading(true);
 
     const ml5 = await import("ml5");
-    const classifier = await ml5.imageClassifier("MobileNet");
+    const classifier = await ml5.imageClassifier("./model.json");
     const results = await classifier.classify(imageRef.current);
     setResults(results);
 
