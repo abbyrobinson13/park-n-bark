@@ -380,11 +380,11 @@ footer {
   margin: 5vmin 0;
   height: 100vh;
   width: 60vw;
-  color: black;
+  color: hsl(111, 47%, 25%);
 }
 
 .calendar-holder * {
-  border-color: black !important;
+  border-color: hsl(27, 58%, 35%)  !important;
 }
 
 @media only screen and (max-width: 800px) {
@@ -393,6 +393,7 @@ footer {
 
 .rbc-toolbar button {
   font-size: inherit !important;
+  color: hsl(111, 47%, 25%);
   background-color: hsl(52, 94%, 94%) !important;
 }
 
@@ -401,7 +402,8 @@ footer {
 }
 
 .rbc-toolbar button.rbc-active {
-  background-color: hsl(27, 34%, 46%) !important;
+  color: hsl(111, 47%, 100%);
+  background-color: hsl(27, 34%, 60%) !important;
 }
 
 .rbc-toolbar button.rbc-active:focus {
@@ -413,13 +415,15 @@ footer {
 }
 
 .rbc-off-range-bg {
-  background-color: hsl(27, 58%, 35%) !important;
+  background-color: hsl(196, 80%, 60%) !important;
+  
 }
 
 .rbc-show-more {
-  background-color: #94bfca !important;
+  background-color: hsl(180, 54%, 57%) !important;
 }
 
+  
 
 .search-bar {
   flex: auto;
