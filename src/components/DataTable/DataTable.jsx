@@ -9,19 +9,19 @@ import { Typography } from "@mui/material";
 
 function DataTable() {
   const [parks, setParks] = useState([]);
-  const [park, setPark] = useState()
+  const [park, setPark] = useState();
   const [totalItems, setTotalItems] = useState(0);
   const [currentPage, setCurrentPage] = useState(1);
   const [search, setSearch] = useState("");
   const [sorting, setSorting] = useState({ field: "", order: " " });
-  const [num, setNum] = useState(0)
+  const [num, setNum] = useState(0);
 
   const ITEMS_PER_PAGE = 25;
 
   const handleClick = (p) => {
-  setNum(() => num + 1)
-  setPark(p)
- }
+    setNum(() => num + 1);
+    setPark(p);
+  };
 
   const headers = [
     { name: "Title", field: "title", sortable: true },
@@ -77,7 +77,9 @@ function DataTable() {
 
   return (
     <>
-      <Typography variant="h4" paddingBottom={2} paddingTop={2}>Off Leash Parks</Typography>
+      <Typography variant="h4" paddingBottom={2} paddingTop={2}>
+        Off Leash Parks
+      </Typography>
       <div className="row w-100">
         <div className="col mb-3 col-12 text-center">
           <div className="row">
@@ -122,7 +124,7 @@ function DataTable() {
         </div>
       </div>
       <div>
-        <SearchModal parks={park} num={num}/>
+        <SearchModal parks={park} num={num} />
       </div>
     </>
   );
