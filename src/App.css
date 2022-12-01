@@ -425,18 +425,30 @@ footer {
 }
 
 .rbc-event-content {
-  background-color: hsl(178, 44%, 95%);
+  background-color: hsl(89, 59%, 90%);
   color: hsl(111, 47%, 25%);
 }
 .rbc-event {
-  background-color: hsl(178, 44%,90%) !important;
+  background-color: hsl(89, 59%, 90%) !important;
   border: 1px solid hsl(27, 58%, 35%) !important;
 }
 .rbc-month-view {
   background-color: hsl(52, 94%, 94%);
 }
 
-
+.rbc-event-label {
+  color: hsl(111, 47%, 25%);
+}
+.rbc-event-content{
+color: hsl(111, 47%, 25%);
+}
+.rbc-time-view {
+  background-color: hsl(52, 94%, 94%);
+}
+.rbc-agenda-view{
+  background-color: hsl(52, 94%, 94%);
+}
+/* search */
 .search-bar {
   flex: auto;
   display: flex;
