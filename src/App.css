@@ -410,20 +410,32 @@ footer {
   background-color: hsl(27, 34%, 46%) !important;
 }
 
-.rbc-today {
-  background-color: hsl(111, 47%, 60%) !important;
-}
+
 
 .rbc-off-range-bg {
-  background-color: hsl(196, 80%, 60%) !important;
+  background-color: hsl(27, 34%, 80%) !important;
   
 }
 
 .rbc-show-more {
   background-color: hsl(180, 54%, 57%) !important;
 }
+.rbc-date-cell {
+ color: hsl(111, 47%, 25%) !important;
+}
 
-  
+.rbc-event-content {
+  background-color: hsl(178, 44%, 95%);
+  color: hsl(111, 47%, 25%);
+}
+.rbc-event {
+  background-color: hsl(178, 44%,90%) !important;
+  border: 1px solid hsl(27, 58%, 35%) !important;
+}
+.rbc-month-view {
+  background-color: hsl(52, 94%, 94%);
+}
+
 
 .search-bar {
   flex: auto;
