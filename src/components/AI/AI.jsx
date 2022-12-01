@@ -29,7 +29,7 @@ const AI = () => {
    
     canvas.height = 400;
     canvas.width = 400;
-    ctx.filter = 'grayscale(1)';
+    // ctx.filter = 'grayscale(1)';
     drawImage(ctx, grayImage, 0,0, canvas.height, canvas.width, {objectFit: 'cover'});
   }
 
