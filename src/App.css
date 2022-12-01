@@ -518,7 +518,7 @@ footer {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 100%;
+  width: 100vw;
   height: 100vh;
   gap: 0.5em;
  }
@@ -538,9 +538,16 @@ footer {
   background-color: hsl(64, 41%, 80%);
 }
 
-#ai-image {
-width: 50%;
-height: 50%;
+#ai-image-holder * {
+  width: 400px;
+  height: 400px;
+  object-fit: cover;
+}
+
+
+#ai-image-holder{
+  display: flex;
+  align-items: center;
 }
 
 /* Data Table Styling*/
