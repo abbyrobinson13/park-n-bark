@@ -10,13 +10,13 @@ class Cards extends Component {
       <div className="dog-star-section container-fluid d-flex justify-content-center">
         <div className="row">
           <div className="col-md-4">
-            <Card imgsrc={img1} title="Card One" />
+            <Card imgsrc={img1} title="Winnie" />
           </div>
           <div className="col-md-4">
-            <Card imgsrc={img2} title="Card Two" />
+            <Card imgsrc={img2} title="Baxter" />
           </div>
           <div className="col-md-4">
-            <Card imgsrc={img3} title="Card Three" />
+            <Card imgsrc={img3} title="Browning" />
           </div>
         </div>
       </div>
