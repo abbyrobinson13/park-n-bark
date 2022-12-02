@@ -38,26 +38,16 @@ const NavBar = () => {
               <div className="first-dropdown">
                 <NavLink to="/favorites">Favorites</NavLink>
               </div>
-              <div>
-                <NavLink to="/saved">Saved</NavLink>
-              </div>
             </div>
           </div>
         </li>
         <li className="Nav-Page">
           <div className="dropdown">
-            <NavLink to="/pet-pals">
+            <NavLink to="/fun">
               <FontAwesomeIcon icon={faDog} />
-             <span> Pet Pals </span> 
+             <span> Fun </span> 
             </NavLink>
-            <div className="dropdown-content">
-              <div className="first-dropdown">
-                <NavLink to="/friends">Friends</NavLink>
-              </div>
-              <div>
-                <NavLink to="/feed">Feed</NavLink>
-              </div>
-            </div>
+            
           </div>
         </li>
         <li className="Nav-Page">
@@ -66,11 +56,6 @@ const NavBar = () => {
               <FontAwesomeIcon icon={faCalendar} />
              <span> Events</span> 
             </NavLink>
-            <div className="dropdown-content">
-              <div className="first-dropdown">
-                <NavLink to="/upcoming-events">Upcoming Events</NavLink>
-              </div>
-            </div>
           </div>
         </li>
       </ul>

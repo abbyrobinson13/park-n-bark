@@ -1,12 +1,13 @@
 import React from 'react'
 import AI from '../components/AI/AI'
 
-const Feed = () => {
+
+const Fun = () => {
   return (
-    <header className="App-header">
+    <div className='App-header'>
         <AI />
-      </header>
+    </div>
   )
 }
 
-export default Feed
+export default Fun
