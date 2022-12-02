@@ -18,7 +18,12 @@ const SearchModal = (props) => {
   const addFavorite = async()=> {
     const p = park
     const uid = '1a'
-    await addFav(p, uid)
+    const fav = await addFav(p, uid)
+    console.log(fav)
+    if(!fav.message) {
+      alert('Favorite added!')
+    } else {
+      alert(fav.message)}
   }
 
   useEffect(() => {

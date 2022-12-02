@@ -26,6 +26,7 @@ const Favorites = () => {
 
   const handleDelete = async(p) => {
     await deleteFav(p)
+    alert('Deleted favorite')
     getFavParks()
   }
   

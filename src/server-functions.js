@@ -66,6 +66,7 @@ const addFav = async(e, i) => {
   })
   const newFav = await serverReq.json()
   console.log(newFav)
+  return newFav
 }
 
 const deleteFav = async(p) => {
