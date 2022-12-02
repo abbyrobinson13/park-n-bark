@@ -14,10 +14,10 @@ function Card(props) {
         <h4 className="card-title">{props.title}</h4>
         <p className="card-text text-secondary">
           {" "}
-          Lorem ipsum dolor sit ametl.
+          This month's featured goodest doggos!
         </p>
         <a href="" className="btn btn-outline">
-          Click
+        ⭐️🐶⭐️
         </a>
       </div>
     </div>

@@ -1,4 +1,9 @@
+import LandingImage from './LandingImage.jpg'
+
 export const ImagesData = [
+    {
+        image : 'https://i.imgur.com/ofTmpuQ.png'
+    },
     {
         image: 'https://images.unsplash.com/photo-1548199973-03cce0bbc87b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2069&q=80'
     },
