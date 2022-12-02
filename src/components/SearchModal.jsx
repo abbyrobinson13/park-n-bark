@@ -4,6 +4,7 @@ import Modal from "@mui/material/Modal";
 import Typography from "@mui/material/Typography";
 import { MapContainer, TileLayer } from "react-leaflet";
 import { createMarker } from "./ParkMap/Map";
+import { addFav } from "../server-functions";
 
 const SearchModal = (props) => {
   const [open, setOpen] = useState(false);
@@ -13,6 +14,12 @@ const SearchModal = (props) => {
   });
   const handleClose = () => setOpen(false);
   const handleOpen = () => setOpen(true);
+
+  const addFavorite = async()=> {
+    const p = park
+    const uid = '1a'
+    await addFav(p, uid)
+  }
 
   useEffect(() => {
     setPark(props.parks);
@@ -111,8 +118,10 @@ const SearchModal = (props) => {
               gridColumnStart: "span 2",
               textAlign: "center",
               display: "flex",
+              gap: "5em",
             }}
           >
+            <button onClick={addFavorite}>Add to favorites</button>
             <button onClick={handleClose}>Exit</button>
           </Box>
         </Box>

@@ -42,7 +42,7 @@ const updateEvent = async(e) => {
 }
 
 const deleteEvent = async(e) => {
-  let serverReq = await fetch("/api/event", {
+  let serverReq = await fetch("/api/event/", {
     method: 'DELETE',
     headers: {
       'Content-Type': 'application/json'
@@ -53,4 +53,31 @@ const deleteEvent = async(e) => {
   console.log(deletedEvent)
 }
 
-  export { dogFact, formSubmit, listEvents, createEvent, updateEvent, deleteEvent };
+const addFav = async(e, i) => {
+  let serverReq = await fetch("/api/favorite", {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/json'
+    },
+    body: JSON.stringify({
+      uid: i,
+      park: e
+    })
+  })
+  const newFav = await serverReq.json()
+  console.log(newFav)
+}
+
+const deleteFav = async(p) => {
+  let serverReq = await fetch("/api/favorite", {
+    method: 'DELETE',
+    headers: {
+      'Content-Type': 'application/json'
+    },
+    body: JSON.stringify(p)
+  })
+  const deleted = await serverReq.json()
+  console.log(deleted)
+}
+
+  export { dogFact, formSubmit, listEvents, createEvent, updateEvent, deleteEvent, addFav, deleteFav };
