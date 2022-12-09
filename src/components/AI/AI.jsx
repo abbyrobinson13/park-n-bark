@@ -63,7 +63,7 @@ const AI = () => {
             </tr>
           </thead>
           <tbody>
-            {results.slice(0, 3).map((result) => (
+            {results.slice(0, 1).map((result) => (
               <tr>
                 <td>{result.label}</td>
                 <td>{(result.confidence * 100).toFixed(1)}%</td>
