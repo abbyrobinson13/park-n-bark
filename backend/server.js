@@ -3,7 +3,6 @@ import express from "express";
 import dogFactRouter from "./routes/dog-facts-router.js";
 import weatherRouter from "./routes/weather-router.js";
 import parkRouter from "./routes/parkRoutes.js";
-import forecastRouter from "./routes/forecast-router.js";
 import eventRouter from "./routes/event-router.js";
 import favoritesRouter from "./routes/favorites-router.js";
 
