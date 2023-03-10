@@ -24,4 +24,4 @@ app.use("/api/park", parkRouter);
 app.use("/api/favorite", favoritesRouter);
 
 // Export the Express API
-module.exports = app;
+export default app;
