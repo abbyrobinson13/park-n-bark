@@ -5,7 +5,7 @@ import weatherRouter from "./routes/weather-router.js";
 import parkRouter from "./routes/parkRoutes.js";
 import forecastRouter from "./routes/forecast-router.js";
 import eventRouter from "./routes/event-router.js";
-import favoritesRouter from "./routes/favorites-router.js"
+import favoritesRouter from "./routes/favorites-router.js";
 
 dotenv.config();
 const app = express();
@@ -23,3 +23,6 @@ app.use("/api/weather", weatherRouter);
 app.use("/api/event/", eventRouter);
 app.use("/api/park", parkRouter);
 app.use("/api/favorite", favoritesRouter);
+
+// Export the Express API
+module.exports = app;
